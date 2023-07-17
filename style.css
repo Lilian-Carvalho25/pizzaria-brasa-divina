@@ -1,11 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Poppins:wght@400;500;600;700;800;900&display=swap');
 
-* { box-sizing: border-box; }
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
 
 html { font-size: 16px; }
 
-body, h1, h2, p, figure, .menu {
-    margin: 0;
-    padding: 0;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #181926;
+    color: #F2F2F2;
+    font-family: 'Pangolin', cursive, Georgia, 'Times New Roman', Times, serif;
 }
 
 a { text-decoration: none; }
@@ -13,22 +23,52 @@ a { text-decoration: none; }
 header {
     position: sticky;
     top: 0;
-    background-color: #fffffa;
+    background-color: #181926;
     z-index: 10;
 }
 
 header .limitador {
     height: 12vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
-nav h2 a {
-    color: #0d0000;
-    font-size: 1.2rem;
-    padding: 1rem;
+nav h2 img {
+    width: 30px;
     display: inline-block;
+}
+
+header .logo {
+    margin-top: 6px;
+}
+
+header nav .container-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+}
+
+header nav button {
+    margin-top: 4px;
+    width: 120px;
+    height: 38px;
+}
+
+header nav .login {
+    background-color: #73071B;
+    border-radius: 6px;
+    border: none;
+    color: #F2F2F2;
+}
+
+header nav .register {
+    background: transparent;
+    border-radius: 6px;
+    border: none;
+    border: #73071B solid 2px;
+    color: #F2F2F2;
 }
 
 .menu { 
@@ -37,7 +77,8 @@ nav h2 a {
 }
 
 .menu a {
-    color: #0d0000;
+    font-family: 'Poppins', sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #F2F2F2;
     font-weight: bold;
     display: flex;
     height: 50px;
@@ -48,13 +89,45 @@ nav h2 a {
 .menu.aberto {
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: #181926;
     position: absolute;
     right: 0;
     left: 0;
 }
 
-@media screen and (min-width: 530px) {
+/* HOME */
+#highlight-home {
+    background: url(imagens/destaque-home.jpg) center center no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#highlight-home h1 {
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+#highlight-home h1 span {
+    color: #73071B;
+    font-weight: 900;
+}
+
+#highlight-home button {
+    background-color: #73071B;
+    border: none;
+    color: #F2F2F2;
+    font-weight: 600;
+    width: 180px;
+    height: 40px;
+    border-radius: 6px;
+}
+
+@media screen and (min-width: 900px) {
     nav h2 {
         display: none
     }
@@ -64,16 +137,16 @@ nav h2 a {
     }
 
     .menu li {
-        width: 100%;
+        width: 20%;
     }
 
     nav {
-        width: 70%;
+        width: 52%;
     }
 }
 
 @media screen and (min-width: 800px) {
     .limitador {
-        max-width: 1100px;
+        max-width: 3000px;
     }
 }
