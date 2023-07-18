@@ -98,6 +98,7 @@ header nav .register {
 /* HOME */
 #highlight-home {
     background: url(imagens/destaque-home.jpg) center center no-repeat;
+    background-size: cover;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -125,6 +126,101 @@ header nav .register {
     width: 180px;
     height: 40px;
     border-radius: 6px;
+}
+
+/* FOOD MENU */
+#food-menu {
+    background: url(imagens/fundo-categorias_redes.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+#food-menu h3 {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 20px;
+}
+
+#food-menu .menu-alignment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+.icons-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    gap: 8px;
+}
+
+/* QUALITY AND DELIVERY */
+/* H2 AND SPAN */
+
+#container-quality, #container-delivery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px 0;
+}
+
+#container-quality img, #container-delivery .deliveryman {
+    width: 350px;
+    margin-bottom: 25px;
+}
+
+#container-quality h2, #container-delivery h2, #container-application h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#container-quality span, #container-delivery span, #container-application span {
+    color: #F2B035;
+}
+
+#container-quality p {
+    margin: 0 30px;
+}
+
+.icons-delivery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.icons-delivery img {
+    width: 60px;
+}
+
+/* APPLICATION */
+#container-application {
+    background: url(imagens/fundo-app.jpg) center center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px 0;
+    padding: 10px;
+}
+
+#container-application .screen {
+    margin: 12px 0;
+}
+
+#container-application p  {
+    margin: 0 25px;
+}
+
+#container-application h6 {
+    font-size: 0.9rem;
+    margin-top: 12px;
 }
 
 @media screen and (min-width: 900px) {
