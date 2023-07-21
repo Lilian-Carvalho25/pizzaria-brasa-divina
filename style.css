@@ -253,7 +253,7 @@ span {
     width: 230px;
 }
 
-.pizza-box button, .candy-box button {
+.pizza-box button, .candy-box button, #container-name button {
     background-color: #73071B;
     color: #F2F2F2;
     font-family: 'Pangolin', cursive, Georgia, 'Times New Roman', Times, serif;
@@ -365,7 +365,7 @@ span {
 
 /* ABOUT US */
 
-/* TEAM */
+/* TEAM AND ASSEMBLE */
 #highlight-aboutUs {
     background: url(imagens/destaque-sobre.jpg) center center no-repeat;
     background-size: cover;
@@ -375,12 +375,12 @@ span {
     align-items: center;
 }
 
-#highlight-aboutUs h1 {
+#highlight-aboutUs h1, #highlight-assemble h1 {
     font-size: 1.8rem;
     font-weight: 900;
 }
 
-#container-team h2 {
+#container-team h2, #container-pasta h2, #container-sauces h2, #container-fillings h2, #container-name h2 {
     text-align: center;
     font-size: 1.5rem;
     margin: 30px 0;
@@ -427,6 +427,70 @@ span {
     font-size: 1.5rem;
     margin: 20px 0;
 }
+
+/* ASSEMBLE PIZZA */
+#highlight-assemble  {
+    background: url(imagens/destaque-monte-sua-pizza.jpg) center center no-repeat;
+    background-size: cover;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-fillings h3 {
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 15px 0;
+}
+
+.pasta, .sauces, .fillings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.name form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.name form label {
+    margin-right: 220px;
+    margin-bottom: 8px;
+}
+
+.name form input {
+    background: transparent;
+    border: none;
+    border: 1px solid #F2B035;
+    color: #F2F2F2;
+    font-family: 'Pangolin', cursive, Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    border-radius: 10px;
+    width: 350px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.name p {
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.size-pasta, .types-sauces, .types-fillings, .types-fillings-candy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0px;
+}
+
 
 /* FOOTER */
 .adjustment-footer {
@@ -637,6 +701,38 @@ span {
         width: 480px;
         margin: 0 ;
     }
+
+    #container-fillings h3 {
+        margin: 25px 0;
+    }
+    
+    .pasta, .sauces, .fillings {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 50px;
+        max-width: 879px;
+        margin: 0 auto;
+    }
+    
+    .name form {
+        margin-bottom: 40px;
+    }
+    
+    .name form label {
+        margin-right: 320px;
+        margin-bottom: 10px;
+    }
+    
+    .name form input {
+        width: 450px;
+        height: 30px;
+        margin-bottom: 10px;
+    }
+    
+    .name p {
+        margin-bottom: 12px;
+    }
 }
 
 @media screen and (min-width:700px) {
@@ -750,6 +846,35 @@ span {
         width: 460px;
         margin: 0 ;
     }
+
+    #container-fillings h3 {
+        margin: 30px 0;
+    }
+    
+    .pasta, .sauces, .fillings {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 30px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .average {
+        margin-left: 60px;
+    }
+    
+    .name form label {
+        margin-right: 430px;
+        margin-bottom: 10px;
+    }
+    
+    .name form input {
+        width: 560px;
+        height: 40px;
+        margin-bottom: 10px;
+    }
+    
 }
 
 @media screen and (min-width: 900px) {
@@ -858,6 +983,12 @@ span {
         width: 500px;
     }
 
+    .pizzas-popular, .candy-popular {
+        max-width: 1300px;
+        margin: 0 auto;
+
+    }
+
     #container-application h6 {
         margin-left: 25px;
         margin-top: 25px;
@@ -910,6 +1041,11 @@ span {
     #container-history p {
         width: 550px;
         margin: 0 ;
+    }
+
+    .pasta, .sauces, .fillings {
+        gap: 30px;
+        max-width: 1200px;
     }
 }
 

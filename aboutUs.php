@@ -14,9 +14,9 @@
             <nav>
                 <h2><a href="" class="icone"> <img src="imagens/icon-menu.svg" alt=""> </a></h2>
                 <ul class="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="aboutUs.html" class="special2">Sobre nós</a></li>
-                    <li><a href="" class="special">Monte sua pizza</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="aboutUs.php" class="special2">Sobre nós</a></li>
+                    <li><a href="assemblePizza.php" class="special">Monte sua pizza</a></li>
                     <li><a href=""><img src="imagens/icon-carrinho.svg" alt="ícone carrinho de compras"></a></li>
                     <div class="container-buttons">
                         <button class="login">Entrar</button>
@@ -119,9 +119,9 @@
             <div class="col-xs-6 col-md-3 adjustment-footer">
               <h6>Principais</h6>
               <ul class="footer-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="aboutUs.html">Sobre nós</a></li>
-                <li><a href="">Monte sua pizza</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="aboutUs.php">Sobre nós</a></li>
+                <li><a href="assemblePizza.php">Monte sua pizza</a></li>
               </ul>
             </div>
   
