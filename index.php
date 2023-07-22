@@ -81,7 +81,7 @@
                         <h3>Calabresa</h3>
                         <h5>R$ 20,00</h5>
                     </div>
-                    <p>Mussarela, calabresa, cebola, molho marinara e orégano.</p>
+                    <p>Mussarela, calabresa trufada, cebola, molho marinara e orégano.</p>
                     <button>Adicionar ao <img src="imagens/icon-carrinho.svg" alt="ícone carrinho de compras" class="car"></button>
                 </article>
 
@@ -91,7 +91,7 @@
                         <h3>Baiana</h3>
                         <h5>R$ 20,00</h5>
                     </div>
-                    <p>Mussarela, tomates, cebola, pimentão e molho marinara.</p>
+                    <p>Mussarela, tomates, milho, pimenta, pimentão e molho marinara.</p>
                     <button>Adicionar ao <img src="imagens/icon-carrinho.svg" alt="ícone carrinho de compras" class="car"></button>
                 </article>
 
@@ -101,7 +101,7 @@
                         <h3>Calabacon</h3>
                         <h5>R$ 20,00</h5>
                     </div>
-                    <p>Mussarela, bacon, molho marinara, tomates e orégano.</p>
+                    <p>Mussarela, bacon, molho marinara, tomates, cogumelos e orégano.</p>
                     <button>Adicionar ao <img src="imagens/icon-carrinho.svg" alt="ícone carrinho de compras" class="car"></button>
                 </article>
             </div>
@@ -264,6 +264,6 @@
   
 
 </body>
-
+<script src="menu.js"></script>
 
 </html>
