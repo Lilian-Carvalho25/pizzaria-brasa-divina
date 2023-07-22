@@ -34,3 +34,8 @@ botao.addEventListener("click", function(event){
         imgElement.src = "imagens/icon-menu.svg";
     }
 });
+
+
+function selecionarProduto(produto) {
+    produto.classList.toggle('selected');
+}

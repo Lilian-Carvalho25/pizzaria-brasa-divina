@@ -452,6 +452,14 @@ span {
     gap: 30px;
 }
 
+.produto {
+    border: 1px solid transparent;
+}
+
+.selected {
+    border: 1px solid #f9ca24;
+}
+
 .name form {
     display: flex;
     justify-content: center;
