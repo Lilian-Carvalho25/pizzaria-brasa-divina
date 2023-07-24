@@ -20,7 +20,7 @@
                     <li><a href="index.php">Home</a></li>
                     <li><a href="aboutUs.php" class="special2">Sobre nós</a></li>
                     <li><a href="assemblePizza.php" class="special">Monte sua pizza</a></li>
-                    <li><a href=""><img src="imagens/icon-carrinho.svg" alt="ícone carrinho de compras"></a></li>
+                    <li><a href="#open-modal"><img src="imagens/icon-carrinho.svg" alt="ícone carrinho de compras"></a></li>
                     <div class="container-buttons">
                         <button class="login">Entrar</button>
                         <button class="register">Cadastre-se</button>
@@ -30,7 +30,69 @@
         </div>
     </header>
 
-    <main>
+    <div class="container-modal">
+      <div id="open-modal" class="modal-window">
+        <div>
+          <a href="#" title="Close" class="modal-close">Fechar</a>
+          
+          <section class="container normal-section">
+            <h2 class="section-title">Carrinho</h2>
+    
+            <table class="cart-table">
+              <thead>
+                <tr>
+                  <th class="table-head-item first-col">Item</th>
+                  <th class="table-head-item second-col">Preço</th>
+                  <th class="table-head-item third-col">Quantidade</th>
+                </tr>
+              </thead>
+    
+              <tbody>
+                <!-- <tr class="cart-product">
+                  <td class="product-identification">
+                    <img src="images/produto2.png" alt="Miniatura" class="cart-product-image">
+                    <strong class="cart-product-title">Miniatura</strong>
+                  </td>
+                  <td>
+                    <span class="cart-product-price">R$69,90</span>
+                  </td>
+                  <td>
+                    <input type="number" value="2" min="0" class="product-qtd-input">
+                    <button type="button" class="remove-product-button">Remover</button>
+                  </td>
+                </tr>
+                <tr class="cart-product">
+                  <td class="product-identification">
+                    <img src="images/poster3.png" alt="Poster 3" class="cart-product-image">
+                    <strong class="cart-product-title">Poster 3</strong>
+                  </td>
+                  <td>
+                    <span class="cart-product-price">R$19,99</span>
+                  </td>
+                  <td>
+                    <input type="number" value="1" min="0" class="product-qtd-input">
+                    <button type="button" class="remove-product-button">Remover</button>
+                  </td>
+                </tr> -->
+              </tbody>
+    
+              <tfoot>
+                <tr>
+                  <td colspan="3" class="cart-total-container">
+                    <strong>Total:</strong>
+                    <span>R$0,00</span>
+                  </td>
+                </tr>
+              </tfoot>
+            </table>
+    
+            <button type="button" class="purchase-button">Finalizar Compra</button>
+          </section>
+        </div>
+      </div>
+      </div>
+    
+      <main>
         <section id="highlight-home">
             <h1>O seu paladar <span>merece.</span></h1>
             <button>Explorar o menu</button>
@@ -74,35 +136,46 @@
 
         <section id="container-pizzas-popular">
             <h2>Pizzas mais populares</h2>
+
+
+        <article class="pizzas-box">
+            <img src="imagens/pizza-calabresa.png" alt="" class="product-image">
+            <h3 class="product-title">Calabresa</h3>
+              <h5 class="product-price">R$20,00</h5>
+              <button type="button" class="button-store">Adicionar ao carrinho</button>
+        </article>
+
+
+
             <div class="pizzas-popular">
                 <article class="pizza-box">
-                    <img src="imagens/pizza-calabresa.png" alt="pizza de calabresa" class="food">
+                    <img src="imagens/pizza-calabresa.png" alt="pizza de calabresa" class="food" class="product-image">
                     <div class="title-categories">
-                        <h3>Calabresa</h3>
-                        <h5>R$ 20,00</h5>
+                        <h3 class="product-title">Calabresa</h3>
+                        <h5 class="product-price">R$ 20,00</h5>
                     </div>
                     <p>Mussarela, calabresa trufada, cebola, molho marinara e orégano.</p>
-                    <button>Adicionar ao <img src="imagens/icon-carrinho.svg" alt="ícone carrinho de compras" class="car"></button>
+                    <button type="submit" class="button-store">Adicionar ao <img src="imagens/icon-carrinho.svg" alt="ícone carrinho de compras" class="car"></button>
                 </article>
 
                 <article class="pizza-box">
-                    <img src="imagens/pizza-baiana.png" alt="pizza baiana" class="food">
+                    <img src="imagens/pizza-baiana.png" alt="pizza baiana" class="food" class="product-image">
                     <div class="title-categories">
                         <h3>Baiana</h3>
-                        <h5>R$ 20,00</h5>
+                        <h5 class="product-price">R$ 20,00</h5>
                     </div>
                     <p>Mussarela, tomates, milho, pimenta, pimentão e molho marinara.</p>
-                    <button>Adicionar ao <img src="imagens/icon-carrinho.svg" alt="ícone carrinho de compras" class="car"></button>
+                    <button type="submit" class="button-store">Adicionar ao <img src="imagens/icon-carrinho.svg" alt="ícone carrinho de compras" class="car"></button>
                 </article>
 
                 <article class="pizza-box">
-                    <img src="imagens/pizza-calabacon.png" alt="pizza calabacon" class="food">
+                    <img src="imagens/pizza-calabacon.png" alt="pizza calabacon" class="food" class="product-image">
                     <div class="title-categories">
                         <h3>Calabacon</h3>
-                        <h5>R$ 20,00</h5>
+                        <h5 class="product-price">R$ 20,00</h5>
                     </div>
                     <p>Mussarela, bacon, molho marinara, tomates, cogumelos e orégano.</p>
-                    <button>Adicionar ao <img src="imagens/icon-carrinho.svg" alt="ícone carrinho de compras" class="car"></button>
+                    <button type="submit" class="button-store">Adicionar ao <img src="imagens/icon-carrinho.svg" alt="ícone carrinho de compras" class="car"></button>
                 </article>
             </div>
         </section>
@@ -264,6 +337,7 @@
   
 
 </body>
-<script src="menu.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/store.js"></script>
 
 </html>

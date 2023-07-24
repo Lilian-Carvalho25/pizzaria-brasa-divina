@@ -23,6 +23,14 @@ a {
     color: #F2F2F2;
 }
 
+li {
+    list-style-type: none;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+
 header {
     position: sticky;
     top: 0;
@@ -97,6 +105,171 @@ header nav .register {
     right: 0;
     left: 0;
 }
+
+/* MODAL CAR */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 16px
+  }
+  
+  .section-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+
+  /* TABLE CAR */
+  .cart-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table-head-item {
+    text-align: start;
+    border-bottom: 1px solid #F2B035;
+    padding-bottom: 9px;
+  }
+  
+  .second-col,
+  .third-col {
+    width: 26%;
+  }
+  
+  .cart-product td {
+    padding: 8px 0;
+  }
+  
+  .product-identification {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cart-product-image {
+    width: 120px;
+  }
+  
+  .cart-product-title {
+    margin-left: 16px;
+    font-size: 18px;
+  }
+  
+  .product-qtd-input {
+    width: 40px;
+    height: 34px;
+    border-radius: 6px;
+    border: 2px solid #F2B035;
+    text-align: center;
+    background: grey;
+    color: #f2f2f2;
+  }
+  
+  .remove-product-button {
+    margin-left: 12px;
+    background: #D9072D;
+    color: #f2f2f2;
+    padding: 10px 8px;
+    border: 0;
+    border-radius: 6px;
+  }
+  
+  .remove-product-button:hover {
+    filter: brightness(0.8);
+  }
+  
+  .cart-total-container {
+    border-top: 1px solid #F2B035;
+    text-align: end;
+    padding: 10px 16px 0 0;
+    font-size: 15px;
+  }
+  
+  .cart-total-container strong {
+    margin-right: 12px;
+  }
+  
+  .purchase-button {
+    display: flex;
+    margin: 20px auto 0;
+    background: #73071B;
+    color: #f2f2f2;
+    border: 0;
+    border-radius: 6px;
+    padding: 14px 18px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    transition: filter 0.2s;
+  }
+
+/* MODAL */
+.modal-window {
+    position: fixed;
+    /* background-color: rgba(255, 255, 255, 0.25); */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    &:target {
+      visibility: visible;
+      opacity: 1;
+      pointer-events: auto;
+    }
+    & > div {
+      width: 800px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 2em;
+      background-color: #181926;
+      color: #f2f2f2;
+      border: #F2B035 solid 1px;
+    }
+    header {
+      font-weight: bold;
+    }
+    h1 {
+      font-size: 150%;
+      margin: 0 0 15px;
+    }
+  }
+  
+  .modal-close {
+    color: #F2F2F2;
+    line-height: 50px;
+    font-size: 80%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 70px;
+    text-decoration: none;
+    &:hover {
+      font-weight: bold;
+    }
+  }
+
+  .container-modal {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* display: none; */
+  }
+  
+  .modal-window {
+    & > div {
+      border-radius: 1rem;
+    }
+  }
 
 /* HOME */
 #highlight-home {
@@ -674,6 +847,27 @@ span {
 
 
 /* GENERAL RESPONSIVE */
+@media screen and (max-width: 584px) {
+    .product-identification {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .cart-product-title {
+      margin-top: 6px;
+    }
+  
+    .product-qtd-input {
+      display: block;
+      margin: 0 auto;
+    }
+  
+    .remove-product-button {
+      display: block;
+      margin: 8px auto 0;
+    }
+}
+  
 @media screen and (min-width:650px) {
 
     #container-team h2 {
@@ -805,6 +999,15 @@ span {
     .limitador {
         max-width: 3000px;
     }
+
+    .cart-table {
+        width: 50%;
+        margin: 0 auto;
+      }
+    
+      .modal-close {
+        margin-right: 220px;
+      }
 
     .pizzas-popular, .candy-popular {
         justify-content: space-evenly;

@@ -272,6 +272,7 @@
   </footer>
 
 </body>
-<script src="menu.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/store.js"></script>
 
 </html>
