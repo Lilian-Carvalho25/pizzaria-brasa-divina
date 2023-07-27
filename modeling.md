@@ -41,9 +41,7 @@ CREATE TABLE pizzasPersonalizadas(
 ```
 
 INSERT INTO `alimentos` (`imagem`, `titulo`, `preco`, `resumo`) VALUES
-('pizza-calabresa.png', 'Calabresa', 20, 'Mussarela, calabresa trufada, cebola, molho marinara e orégano.'),
-('pizza-baiana.png', 'Baiana', 20, 'Mussarela, tomates, milho, pimenta, pimentão e molho marinara.'),
-('pizza-calabacon.png', 'Calabacon', 20, 'Mussarela, tomates, milho, pimenta, pimentão e molho marinara.'),
-('pizza-mussarela.png', 'Mussarela',  20, 'Mussarela, orégano, presunto, pimenta, milho e molho bechamel.'),
-('pizza-pimentao.png', 'Pimentão', 20, 'Mussarela, pimentão, orégano, pimenta, milho e molho cheddar.'),
-('pizza-presunto.png', 'Presunto', 20, 'Mussarela, presunto, orégano, brócolis, alho e molho cheddar.');
+('pizza-mussarela.png', 'Mussarela', 20, 'Mussarela, molho marinara, borda crocante, orégano e cogumelos.'),
+('pizza-pimentao.png', 'Pimentão', 20, 'Mussarela, pimentão, orégano, cebolas e molho bechamel.'),
+('pizza-presunto.png', 'Presunto', 20, 'Mussarela, presunto, orégano, azeitonas e molho marinara.'),
+('pizza-cebolas.png', 'Cebolas', 20, 'Mussarela, cebolas, escarola, cogumelos e molho barbecue.');

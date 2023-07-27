@@ -40,7 +40,7 @@
             <h3>Selecione a categoria desejada:</h3>
             <div class="menu-alignment">
                 <article class="icons-menu">
-                    <a href="">
+                    <a href="pizzas.html">
                         <img src="imagens/icon-pizza.svg" alt="ícone de pizza">
                     </a>
                     <h5>Pizzas</h5>
