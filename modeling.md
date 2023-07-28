@@ -23,7 +23,27 @@ CREATE TABLE usuarios(
 ```
 
 ```sql
-CREATE TABLE alimentos(
+CREATE TABLE pizzas(
+    id MEDIUMINT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    imagem VARCHAR(45) NOT NULL,
+    titulo VARCHAR(45) NOT NULL,
+    preco FLOAT NOT NULL,
+    resumo VARCHAR(200) NOT NULL
+);
+```
+
+```sql
+CREATE TABLE bebidas(
+    id MEDIUMINT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    imagem VARCHAR(45) NOT NULL,
+    titulo VARCHAR(45) NOT NULL,
+    preco FLOAT NOT NULL,
+    resumo VARCHAR(200) NOT NULL
+);
+```
+
+```sql
+CREATE TABLE doces(
     id MEDIUMINT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     imagem VARCHAR(45) NOT NULL,
     titulo VARCHAR(45) NOT NULL,
@@ -39,9 +59,3 @@ CREATE TABLE pizzasPersonalizadas(
     ingredientes VARCHAR(45) NOT NULL
 );
 ```
-
-INSERT INTO `alimentos` (`imagem`, `titulo`, `preco`, `resumo`) VALUES
-('pizza-mussarela.png', 'Mussarela', 20, 'Mussarela, molho marinara, borda crocante, orégano e cogumelos.'),
-('pizza-pimentao.png', 'Pimentão', 20, 'Mussarela, pimentão, orégano, cebolas e molho bechamel.'),
-('pizza-presunto.png', 'Presunto', 20, 'Mussarela, presunto, orégano, azeitonas e molho marinara.'),
-('pizza-cebolas.png', 'Cebolas', 20, 'Mussarela, cebolas, escarola, cogumelos e molho barbecue.');

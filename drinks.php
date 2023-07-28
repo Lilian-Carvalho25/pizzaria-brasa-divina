@@ -37,7 +37,7 @@ $drinks = readAllDrinks($conexao);
 
     <main>
         <section id="highlight-drinks">
-            <h1>Pizzas</h1>
+            <h1>Bebidas</h1>
         </section>
 
         <section class="food-menu">
@@ -56,10 +56,10 @@ $drinks = readAllDrinks($conexao);
                     <h5>Bebidas</h5>
                 </article>
                 <article class="icons-menu">
-                    <a href="">
+                    <a href="candys.php">
                         <img src="imagens/icon-sobremesas.svg" alt="ícone sobremesa">
                     </a>
-                    <h5>Sobremesas</h5>
+                    <h5>Doces</h5>
                 </article>
             </div>
         </section>
@@ -103,7 +103,7 @@ $drinks = readAllDrinks($conexao);
                     <ul class="footer-links">
                         <li><a href="pizzas.php">Pizzas</a></li>
                         <li><a href="drinks.php">Bebidas</a></li>
-                        <li><a href="">Sobremesas</a></li>
+                        <li><a href="candys.php">Doces</a></li>
                     </ul>
                 </div>
             </div>

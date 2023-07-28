@@ -383,8 +383,8 @@ span {
     width: 60px;
 }
 
-/* PIZZAS POPULAR, CANDYS POPULAR, PIZZAS,  */
-.pizzas-popular, .candy-popular, .pizzas {
+/* PIZZAS POPULAR, CANDYS POPULAR, PIZZAS, DRINKS AND CANDYS  */
+.pizzas-popular, .candy-popular, .pizzas, .drinks, .candys {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -400,7 +400,25 @@ span {
     align-items: center;
 }
 
-#container-pizzas {
+#highlight-drinks {
+    background: url(imagens/destaque-bebidas.jpg) center center no-repeat;
+    background-size: cover;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#highlight-candys {
+    background: url(imagens/destaque-doces.jpg) center center no-repeat;
+    background-size: cover;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-pizzas, #container-drinks {
     margin: 30px 0;
 }
 
@@ -410,7 +428,7 @@ span {
     margin-bottom: 15px;
 }
 
-.pizza-box, .candy-box, .pizzas-box {
+.pizza-box, .candy-box, .pizzas-box, .drinks-box, .candys-box {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -420,7 +438,7 @@ span {
     margin-bottom: 22px;
 }
 
-.pizza-box:hover, .candy-box:hover, .pizzas-box:hover {
+.pizza-box:hover, .candy-box:hover, .pizzas-box:hover, .drinks-box:hover, .candys-box:hover {
     border: 1px solid #90909059;
 }
 
@@ -432,14 +450,14 @@ span {
     margin-top: 15px;
 }
 
-.pizza-box p, .candy-box p, .pizzas-box p {
+.pizza-box p, .candy-box p, .pizzas-box p, .drinks-box p, .candys-box {
     text-align: left;
     margin: 15px 0;
     margin-left: 27px;
     width: 230px;
 }
 
-.pizza-box button, .candy-box button, .pizzas-box button, #container-name button {
+.pizza-box button, .candy-box button, .pizzas-box button, .drinks-box button, .candys-box button, #container-name button {
     background-color: #73071B;
     color: #F2F2F2;
     font-family: 'Pangolin', cursive, Georgia, 'Times New Roman', Times, serif;
@@ -554,7 +572,7 @@ span {
     align-items: center;
 }
 
-#highlight-aboutUs h1, #highlight-assemble h1, #highlight-pizzas h1 {
+#highlight-aboutUs h1, #highlight-assemble h1, #highlight-pizzas h1,  #highlight-drinks h1, #highlight-candys h1   {
     font-size: 1.8rem;
     font-weight: 900;
 }
@@ -1015,26 +1033,26 @@ span {
         margin-right: 220px;
       }
 
-    .pizzas-popular, .candy-popular, .pizzas {
+    .pizzas-popular, .candy-popular, .pizzas, .drinks, .candys {
         justify-content: space-evenly;
         flex-direction: row;
         flex-wrap: wrap;
     }
 
-    .pizza-box, .candy-box, .pizzas-box {
+    .pizza-box, .candy-box, .pizzas-box, .drinks-box, .candys-box {
         width: 300px;
         padding: 30px 70px;
     }
 
-    .pizzas-popular img, .candy-popular img, .pizzas img {
+    .pizzas-popular img, .candy-popular img, .pizzas img, .drinks img, .candys img {
         width: 250px;
     }
 
-    #container-pizzas-popular h2, #container-candy-popular h2, #container-pizzas {
+    #container-pizzas-popular h2, #container-candy-popular h2, #container-pizzas, #container-drinks {
         margin-bottom: 25px;
     }
     
-    .pizza-box, .candy-box, .pizzas-box {
+    .pizza-box, .candy-box, .pizzas-box, .drinks-box, .candys-box {
         margin-bottom: 22px;
     }
 
@@ -1200,7 +1218,7 @@ span {
         width: 500px;
     }
 
-    .pizzas-popular, .candy-popular, .pizzas {
+    .pizzas-popular, .candy-popular, .pizzas, .drinks, .candys {
         max-width: 1150px;
         margin: 0 auto;
     }

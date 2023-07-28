@@ -1,7 +1,7 @@
 <?php
 require "inc/food-functions.php";
 
-$pizzas = readAllPizzas($conexao); 
+$candys = readAllCandys($conexao); 
 
 ?>
 
@@ -11,7 +11,7 @@ $pizzas = readAllPizzas($conexao);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brasa Divina - Pizzas</title>
+    <title>Brasa Divina - Doces</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -36,8 +36,8 @@ $pizzas = readAllPizzas($conexao);
     </header>
 
     <main>
-        <section id="highlight-pizzas">
-            <h1>Pizzas</h1>
+        <section id="highlight-candys">
+            <h1>Doces</h1>
         </section>
 
         <section class="food-menu">
@@ -59,21 +59,22 @@ $pizzas = readAllPizzas($conexao);
                     <a href="candys.php">
                         <img src="imagens/icon-sobremesas.svg" alt="ícone sobremesa">
                     </a>
-                    <h5>Doces</h5>
+                    <h5>Docess</h5>
                 </article>
             </div>
         </section>
-        <section id="container-pizzas">
-            <div class="pizzas">
+
+        <section id="container-drinks">
+            <div class="drinks">
                 <?php
-                foreach ($pizzas as $pizza) { ?>
-                    <article class="pizzas-box">
-                        <img src=imagens/<?= $pizza['imagem'] ?> alt="pizza" class="product-image">
+                foreach ($candys as $candy) { ?>
+                    <article class="drinks-box">
+                        <img src=imagens/<?= $candy['imagem'] ?> alt="Bebida" class="product-image">
                         <div class="title-categories">
-                            <h3 class="product-title"><?= $pizza["titulo"] ?></h3>
-                            <h5 class="product-price">R$ <?= $pizza["preco"] ?>,00</h5>
+                            <h3 class="product-title"><?= $candy["titulo"] ?></h3>
+                            <h5 class="product-price">R$ <?= $candy["preco"] ?>,00</h5>
                         </div>
-                        <p><?= $pizza["resumo"] ?></p>
+                        <p><?= $candy["resumo"] ?></p>
                         <button type="submit" class="button-store">Adicionar ao carrinho</button>
                     </article>
                 <?php } ?>
@@ -102,7 +103,7 @@ $pizzas = readAllPizzas($conexao);
                     <ul class="footer-links">
                         <li><a href="pizzas.php">Pizzas</a></li>
                         <li><a href="drinks.php">Bebidas</a></li>
-                        <li><a href="candys.php">Docess</a></li>
+                        <li><a href="candys.php">Doces</a></li>
                     </ul>
                 </div>
             </div>

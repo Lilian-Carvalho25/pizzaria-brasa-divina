@@ -40,22 +40,22 @@
             <h3>Selecione a categoria desejada:</h3>
             <div class="menu-alignment">
                 <article class="icons-menu">
-                    <a href="pizzas.html">
+                    <a href="pizzas.php">
                         <img src="imagens/icon-pizza.svg" alt="ícone de pizza">
                     </a>
                     <h5>Pizzas</h5>
                 </article>
                 <article class="icons-menu">
-                    <a href="">
+                    <a href="drinks.php">
                         <img src="imagens/icon-bebidas.svg" alt="ícone de copo">
                     </a>
                     <h5>Bebidas</h5>
                 </article>
                 <article class="icons-menu">
-                    <a href="">
+                    <a href="candys.php">
                         <img src="imagens/icon-sobremesas.svg" alt="ícone sobremesa">
                     </a>
-                    <h5>Sobremesas</h5>
+                    <h5>Doces</h5>
                 </article>
             </div>
         </section>
@@ -138,7 +138,7 @@
                         <h5>R$ 20,00</h5>
                     </div>
                     <p>Chocolate ao leite e bananas assadas com mel e cravos.</p>
-                    <button>Adicionar ao <img src="imagens/icon-carrinho.svg" alt="ícone carrinho de compras" class="car"></button>
+                    <button>Adicionar ao carrinho</button>
                 </article>
 
                 <article class="candy-box">
@@ -148,7 +148,7 @@
                         <h5>R$ 20,00</h5>
                     </div>
                     <p>Chocolate meio amargo, leite condensado e morangos.</p>
-                    <button>Adicionar ao <img src="imagens/icon-carrinho.svg" alt="ícone carrinho de compras" class="car"></button>
+                    <button>Adicionar ao carrinho</button>
                 </article>
 
                 <article class="candy-box">
@@ -158,7 +158,7 @@
                         <h5>R$ 20,00</h5>
                     </div>
                     <p>Chocolate ao leite, morangos, bananas, kiwis, amoras, etc.</p>
-                    <button>Adicionar ao <img src="imagens/icon-carrinho.svg" alt="ícone carrinho de compras" class="car"></button>
+                    <button>Adicionar ao carrinho</button>
                 </article>
             </div>
         </section>
@@ -240,9 +240,9 @@
             <div class="col-xs-6 col-md-3 adjustment-footer">
               <h6>Categorias</h6>
               <ul class="footer-links">
-                <li><a href="">Pizzas</a></li>
-                <li><a href="">Bebidas</a></li>
-                <li><a href="">Sobremesas</a></li>
+                <li><a href="pizzas.php">Pizzas</a></li>
+                <li><a href="drinks.php">Bebidas</a></li>
+                <li><a href="candys.php">Doces</a></li>
               </ul>
             </div>
           </div>
