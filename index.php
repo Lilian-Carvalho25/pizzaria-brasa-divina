@@ -20,7 +20,7 @@
                     <li><a href="index.php">Home</a></li>
                     <li><a href="aboutUs.php" class="special2">Sobre nós</a></li>
                     <li><a href="assemblePizza.php" class="special">Monte sua pizza</a></li>
-                    <li><a href="#open-modal"><img src="imagens/icon-carrinho.svg" alt="ícone carrinho de compras"></a></li>
+                    <li><a href=""><img src="imagens/icon-carrinho.svg" alt="ícone carrinho de compras"></a></li>
                     <div class="container-buttons">
                         <button class="login">Entrar</button>
                         <button class="register">Cadastre-se</button>
