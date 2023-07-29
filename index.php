@@ -20,7 +20,43 @@
                     <li><a href="index.php">Home</a></li>
                     <li><a href="aboutUs.php" class="special2">Sobre nós</a></li>
                     <li><a href="assemblePizza.php" class="special">Monte sua pizza</a></li>
-                    <li><a href=""><img src="imagens/icon-carrinho.svg" alt="ícone carrinho de compras"></a></li>
+                    <li><a class="cta" href="#google"><img src="imagens/icon-carrinho.svg" alt=""></a>
+                        <div id="google" class="modaloverlay">
+                            <div class="modal">
+                                <a href="#close" class="close">&times;</a>
+                                <div>
+                                    <section class="container normal-section">
+                                        <h2 class="section-title">Carrinho</h2>
+
+                                        <table class="cart-table">
+                                            <thead>
+                                                <tr>
+                                                    <th class="table-head-item first-col">Item</th>
+                                                    <th class="table-head-item second-col">Preço</th>
+                                                    <th class="table-head-item third-col">Quantidade</th>
+                                                </tr>
+                                            </thead>
+
+                                            <tbody>
+
+                                            </tbody>
+
+                                            <tfoot>
+                                                <tr>
+                                                    <td colspan="3" class="cart-total-container">
+                                                        <strong>Total</strong>
+                                                        <span>R$0,00</span>
+                                                    </td>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+
+                                        <button type="button" class="purchase-button">Finalizar Compra</button>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                     <div class="container-buttons">
                         <button class="login">Entrar</button>
                         <button class="register">Cadastre-se</button>
@@ -29,8 +65,8 @@
             </nav>
         </div>
     </header>
-    
-      <main>
+
+    <main>
         <section id="highlight-home">
             <h1>O seu paladar <span>merece.</span></h1>
             <button>Explorar o menu</button>
@@ -80,30 +116,30 @@
                     <img src="imagens/pizza-calabresa.png" alt="pizza de calabresa" class="product-image">
                     <div class="title-categories">
                         <h3 class="product-title">Calabresa</h3>
-                        <h5 class="product-price">R$ 20,00</h5>
+                        <h5 class="product-price">R$ 30,00</h5>
                     </div>
                     <p>Mussarela, calabresa trufada, cebola, molho marinara e orégano.</p>
-                    <button type="submit" class="button-store">Adicionar ao carrinho</button>
+                    <button type="submit" class="button-add-cart">Adicionar ao carrinho</button>
                 </article>
 
                 <article class="pizza-box">
                     <img src="imagens/pizza-baiana.png" alt="pizza baiana" class="product-image">
                     <div class="title-categories">
-                        <h3>Baiana</h3>
-                        <h5 class="product-price">R$ 20,00</h5>
+                        <h3 class="product-title">Baiana</h3>
+                        <h5 class="product-price">R$ 30,00</h5>
                     </div>
                     <p>Mussarela, tomates, milho, pimenta, pimentão e molho marinara.</p>
-                    <button type="submit" class="button-store">Adicionar ao carrinho</button>
+                    <button type="submit" class="button-add-cart">Adicionar ao carrinho</button>
                 </article>
 
                 <article class="pizza-box">
                     <img src="imagens/pizza-calabacon.png" alt="pizza calabacon" class="product-image">
                     <div class="title-categories">
-                        <h3>Calabacon</h3>
-                        <h5 class="product-price">R$ 20,00</h5>
+                        <h3 class="product-title">Calabacon</h3>
+                        <h5 class="product-price">R$ 30,00</h5>
                     </div>
                     <p>Mussarela, bacon, molho marinara, tomates, cogumelos e orégano.</p>
-                    <button type="submit" class="button-store">Adicionar ao carrinho</button>
+                    <button type="submit" class="button-add-cart">Adicionar ao carrinho</button>
                 </article>
             </div>
         </section>
@@ -132,33 +168,33 @@
 
             <div class="candy-popular">
                 <article class="candy-box">
-                    <img src="imagens/pizza-banana-c-chocolate.png" alt="pizza de banana" class="food">
+                    <img src="imagens/pizza-banana-c-chocolate.png" alt="pizza de banana" class="product-image">
                     <div class="title-categories">
-                        <h3>Bananas</h3>
-                        <h5>R$ 20,00</h5>
+                        <h3 class="product-title">Bananas</h3>
+                        <h5 class="product-price">R$ 30,00</h5>
                     </div>
                     <p>Chocolate ao leite e bananas assadas com mel e cravos.</p>
-                    <button>Adicionar ao carrinho</button>
+                    <button type="submit" class="button-add-cart">Adicionar ao carrinho</button>
                 </article>
 
                 <article class="candy-box">
-                    <img src="imagens/pizza-chocolate-c-morango.png" alt="pizza de morango" class="food">
+                    <img src="imagens/pizza-chocolate-c-morango.png" alt="pizza de morango" class="product-image">
                     <div class="title-categories">
-                        <h3>Morangos</h3>
-                        <h5>R$ 20,00</h5>
+                        <h3 class="product-title">Morangos</h3>
+                        <h5 class="product-price">R$ 30,00</h5>
                     </div>
                     <p>Chocolate meio amargo, leite condensado e morangos.</p>
-                    <button>Adicionar ao carrinho</button>
+                    <button type="submit" class="button-add-cart">Adicionar ao carrinho</button>
                 </article>
 
                 <article class="candy-box">
-                    <img src="imagens/pizza-frutas.png" alt="pizza de frutas" class="food">
+                    <img src="imagens/pizza-frutas.png" alt="pizza de frutas" class="product-image">
                     <div class="title-categories">
-                        <h3>Frutas</h3>
-                        <h5>R$ 20,00</h5>
+                        <h3 class="product-title">Frutas</h3>
+                        <h5 class="product-price">R$ 30,00</h5>
                     </div>
                     <p>Chocolate ao leite, morangos, bananas, kiwis, amoras, etc.</p>
-                    <button>Adicionar ao carrinho</button>
+                    <button type="submit" class="button-add-cart">Adicionar ao carrinho</button>
                 </article>
             </div>
         </section>
@@ -169,8 +205,8 @@
                 <h2>Busca <span>praticidade</span>? Baixe nosso app!</h2>
                 <p>Agora, você pode desfrutar de uma experiência conveniente e rápida ao fazer seus pedidos. Com apenas alguns toques na tela do seu aparelho.
                     Além disso, nosso app oferece o recurso de rastreamento em tempo real, permitindo que você acompanhe a sua entrega do início ao fim. E para tornar tudo ainda mais especial, oferecemos promoções exclusivas.</p>
-                    <h6>Disponível em:</h6>
-                    <img src="imagens/icons-disponibilidade.png" alt="Play store e App store">
+                <h6>Disponível em:</h6>
+                <img src="imagens/icons-disponibilidade.png" alt="Play store e App store">
             </div>
         </section>
 
@@ -220,49 +256,49 @@
         </section>
     </main>
 
-     <footer class="site-footer">
+    <footer class="site-footer">
         <div class="container">
-          <div class="row big-screen">
-            <div class="col-sm-12 col-md-6 adjustment-footer">
-              <h6>Sobre</h6>
-              <p class="text-justify sobre">A Brasa Divina é uma pizzaria que se destaca pelos seus rigorosos padrões de qualidade. Desde a seleção cuidadosa dos ingredientes até a meticulosa preparação das pizzas, tudo é feito com dedicação e excelência.</p>
+            <div class="row big-screen">
+                <div class="col-sm-12 col-md-6 adjustment-footer">
+                    <h6>Sobre</h6>
+                    <p class="text-justify sobre">A Brasa Divina é uma pizzaria que se destaca pelos seus rigorosos padrões de qualidade. Desde a seleção cuidadosa dos ingredientes até a meticulosa preparação das pizzas, tudo é feito com dedicação e excelência.</p>
+                </div>
+
+                <div class="col-xs-6 col-md-3 adjustment-footer">
+                    <h6>Principais</h6>
+                    <ul class="footer-links">
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="aboutUs.php">Sobre nós</a></li>
+                        <li><a href="assemblePizza.php">Monte sua pizza</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-6 col-md-3 adjustment-footer">
+                    <h6>Categorias</h6>
+                    <ul class="footer-links">
+                        <li><a href="pizzas.php">Pizzas</a></li>
+                        <li><a href="drinks.php">Bebidas</a></li>
+                        <li><a href="candys.php">Doces</a></li>
+                    </ul>
+                </div>
             </div>
-  
-            <div class="col-xs-6 col-md-3 adjustment-footer">
-              <h6>Principais</h6>
-              <ul class="footer-links">
-                <li><a href="index.php">Home</a></li>
-                <li><a href="aboutUs.php">Sobre nós</a></li>
-                <li><a href="assemblePizza.php">Monte sua pizza</a></li>
-              </ul>
-            </div>
-  
-            <div class="col-xs-6 col-md-3 adjustment-footer">
-              <h6>Categorias</h6>
-              <ul class="footer-links">
-                <li><a href="pizzas.php">Pizzas</a></li>
-                <li><a href="drinks.php">Bebidas</a></li>
-                <li><a href="candys.php">Doces</a></li>
-              </ul>
-            </div>
-          </div>
-          <hr>
+            <hr>
         </div>
         <div class="container">
-          <div class="row">
-  
-            <div class="col-md-4 col-sm-6 col-xs-12 icons-footer">
-              <ul class="social-icons">
-                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-                <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
-              </ul>
+            <div class="row">
+
+                <div class="col-md-4 col-sm-6 col-xs-12 icons-footer">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
             </div>
-          </div>
         </div>
-  </footer>
-  
+    </footer>
+
 
 </body>
 <script src="js/menu.js"></script>

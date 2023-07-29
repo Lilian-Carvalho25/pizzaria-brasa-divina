@@ -20,7 +20,7 @@ if (document.readyState == 'loading') {
     }
   
     // Botão add produto ao carrinho
-    const addToCartButtons = document.getElementsByClassName("button-store")
+    const addToCartButtons = document.getElementsByClassName("button-add-cart")
     for (var i = 0; i < addToCartButtons.length; i++) {
       addToCartButtons[i].addEventListener("click", addProductToCart)
     }
