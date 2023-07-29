@@ -5,7 +5,7 @@ let massaSelecionada = null;
         const limiteRecheiosSalgados = 6;
         const limiteRecheiosDoces = 3;
         const limiteMassas = 1;
-        let opcoesSelecionadasObj = {}; // Armazena as opções selecionadas
+        let opcoesSelecionadasObj = {};
 
         function selecionarProduto(produto) {
             const categoria = produto.classList[0];
@@ -21,7 +21,6 @@ let massaSelecionada = null;
                 }
                 molhoSelecionado = produto;
 
-                // Desmarcar todos os recheios doces ao selecionar um molho
                 const recheiosDoces = document.getElementsByClassName('types-fillings-candy');
                 for (let i = 0; i < recheiosDoces.length; i++) {
                     recheiosDoces[i].classList.remove('selected');
@@ -30,19 +29,17 @@ let massaSelecionada = null;
             } else if (categoria === 'types-fillings' || categoria === 'types-fillings-candy') {
                 const isRecheioSalgado = categoria === 'types-fillings';
 
-                // Verifica se já foi selecionado um molho, se sim, bloqueia a seleção de recheios doces
                 if (molhoSelecionado && !isRecheioSalgado) {
                     return;
                 }
 
-                // Verifica o limite de seleções na categoria correspondente e bloqueia a seleção
                 if (isRecheioSalgado && recheiosSalgadosSelecionados >= limiteRecheiosSalgados) {
-                    produto.classList.remove('selected'); // Desmarca o item caso tenha atingido o limite de recheios salgados
+                    produto.classList.remove('selected'); 
                     return;
                 }
 
                 if (!isRecheioSalgado && recheiosDocesSelecionados >= limiteRecheiosDoces) {
-                    produto.classList.remove('selected'); // Desmarca o item caso tenha atingido o limite de recheios doces
+                    produto.classList.remove('selected'); 
                     return;
                 }
 
@@ -61,20 +58,16 @@ let massaSelecionada = null;
             const opcoesSelecionadas = document.getElementById('opcoesSelecionadas');
             const opcoes = [];
 
-            // Atualiza o objeto de opções selecionadas
             opcoesSelecionadasObj = {};
 
-            // Adiciona a massa selecionada ao objeto
             if (massaSelecionada) {
                 opcoesSelecionadasObj['massa'] = massaSelecionada.querySelector('h4').innerText;
             }
 
-            // Adiciona o molho selecionado ao objeto
             if (molhoSelecionado) {
                 opcoesSelecionadasObj['molho'] = molhoSelecionado.querySelector('h4').innerText;
             }
 
-         // Adiciona os recheios selecionados ao objeto
          const recheiosSelecionados = document.getElementsByClassName('selected');
          for (let i = 0; i < recheiosSelecionados.length; i++) {
              const recheio = recheiosSelecionados[i].querySelector('h4').innerText;
@@ -88,7 +81,6 @@ let massaSelecionada = null;
              }
          }
 
-         // Cria a string final de opções a ser exibida no parágrafo
          opcoes.push(`massa: ${opcoesSelecionadasObj['massa'] || '-'}`);
          opcoes.push(`molho: ${opcoesSelecionadasObj['molho'] || '-'}`);
          if (opcoesSelecionadasObj['recheios']) {
@@ -98,6 +90,5 @@ let massaSelecionada = null;
              opcoes.push(`dcs: ${opcoesSelecionadasObj['recheiosDoces'].join(', ')}`);
          }
 
-         // Atualiza o parágrafo com as opções selecionadas
          opcoesSelecionadas.innerHTML = `<span>Opções selecionadas: </span>${opcoes.join('; ')}.`;
      }

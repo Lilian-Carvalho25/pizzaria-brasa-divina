@@ -23,19 +23,13 @@ botao.addEventListener("click", function(event){
     linksMenu.classList.toggle("aberto");
 
     if(linksMenu.classList.contains("aberto")){
-        icone.innerHTML = ""; // Limpa o conteúdo anterior
+        icone.innerHTML = ""; 
 
-        // Cria o elemento <img> e atribui a imagem desejada
         const imgElement = document.createElement("img");
-        imgElement.src = "imagens/icon-menu.svg"; // Substitua pelo caminho da sua imagem
+        imgElement.src = "imagens/icon-menu.svg";
 
         icone.appendChild(imgElement);
     } else {
         imgElement.src = "imagens/icon-menu.svg";
     }
 });
-
-
-// function selecionarProduto(produto) {
-//     produto.classList.toggle('selected');
-// }
