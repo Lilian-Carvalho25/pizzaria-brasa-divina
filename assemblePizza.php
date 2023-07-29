@@ -254,8 +254,8 @@
         <form action="">
           <label for="">Nome da sua pizza:</label>
           <input type="text" name="name-pizza" id="name-pizza">
-          <p><span>Opções selecionadas: </span>massa: média; molho: cheddar; recheios: salame, bacon e alho. </p>
-          <button>Adicionar ao <img src="imagens/icon-carrinho.svg" alt="ícone carrinho de compras" class="car"></button>
+          <p id="opcoesSelecionadas"><span>Opções selecionadas: </span> </p>
+          <button type="submit" class="button-add-cart">Adicionar ao carrinho</button>
         </form>
       </div>
     </section>
@@ -309,6 +309,7 @@
 
 </body>
 <script src="js/menu.js"></script>
+<script src="js/selectionIngredients.js"></script>
 <script src="js/store.js"></script>
 
 </html>

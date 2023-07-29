@@ -36,6 +36,6 @@ botao.addEventListener("click", function(event){
 });
 
 
-function selecionarProduto(produto) {
-    produto.classList.toggle('selected');
-}
+// function selecionarProduto(produto) {
+//     produto.classList.toggle('selected');
+// }
