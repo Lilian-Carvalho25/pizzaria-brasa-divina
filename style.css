@@ -378,7 +378,7 @@ span {
 }
 
 .icons-delivery img {
-    width: 60px;
+    width: 40px;
 }
 
 /* PIZZAS POPULAR, CANDYS POPULAR, PIZZAS, DRINKS AND CANDYS  */
@@ -575,7 +575,7 @@ span {
     font-weight: 900;
 }
 
-#container-team h2, #container-pasta h2, #container-sauces h2, #container-fillings h2, #container-name h2 {
+#container-team h2, #container-pasta h2, #container-sauces h2, #container-fillings h2, #container-name h2, #container-rules h2 {
     text-align: center;
     font-size: 1.5rem;
     margin: 30px 0;
@@ -633,6 +633,11 @@ span {
     align-items: center;
 }
 
+.rules p {
+    margin: 0 auto;
+    width: 370px;
+}
+
 #container-fillings h3 {
     text-align: center;
     font-size: 1.3rem;
@@ -680,7 +685,9 @@ span {
     height: 30px;
     margin-bottom: 10px;
 }
+
 .name p {
+    max-width: 664px;
     font-size: 0.9rem;
     text-align: center;
     margin-bottom: 10px;
@@ -693,6 +700,119 @@ span {
     flex-direction: column;
     gap: 0px;
 }
+
+/* LOGIN AND REGISTER */
+#container-login {
+    background: url(imagens/destaque-login.jpg) center center no-repeat;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#container-register {
+    background: url(imagens/destaque-cadastro.jpg) center center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#container-login h1, #container-register h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+.login-page, .register-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: #1819268f;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(1px);
+    border: 1px solid #181926a1;
+    max-width: 390px;
+    padding: 25px 15px;
+}
+
+.feedback-login-and-register {
+    background-color: #f2b035b0;
+    font-weight: bold;
+    padding: 15px;
+    margin: 10px auto;
+    border-radius: 12px;
+}
+
+.alignment-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+#cep-register, #complemento-register, #email-register, #senha-register{
+    background: #181926;
+    border: none;
+    border: 1px solid #F2B035;
+    color: #F2F2F2;
+    font-family: 'Pangolin', cursive, Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    border-radius: 10px;
+    width: 160px;
+    height: 33px;
+    margin-bottom: 12px;
+}
+
+.cep-and-cmp, .email-and-password {
+    display: flex;
+    gap: 25px;
+}
+
+.login-page form, .register-page form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-page form input, .register-page form input {
+    background: #181926;
+    border: none;
+    border: 1px solid #F2B035;
+    color: #F2F2F2;
+    font-family: 'Pangolin', cursive, Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    border-radius: 10px;
+    width: 350px;
+    height: 33px;
+    margin-bottom: 12px;
+}
+
+.login-page button, .register-page button {
+    background-color: #73071B;
+    color: #F2F2F2;
+    font-family: 'Pangolin', cursive, Georgia, 'Times New Roman', Times, serif;
+    width: 160px;
+    height: 38px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 17px;
+}
+
+.login-page a, .register-page a {
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 12px;
+}
+
 
 
 /* FOOTER */
@@ -888,6 +1008,10 @@ span {
       display: block;
       margin: 8px auto 0;
     }
+
+    .rules p {
+        width: 400px;
+    }
 }
   
 @media screen and (min-width:650px) {
@@ -957,6 +1081,17 @@ span {
     .name p {
         margin-bottom: 12px;
     }
+
+    
+    #container-login h1, #container-register h1 {
+        margin-bottom: 15px;
+    }
+    
+    .login-page, .register-page {
+        width: 600px;
+        max-width: 6000px;
+        padding: 32px 17px;
+    }
 }
 
 @media screen and (min-width:700px) {
@@ -1014,6 +1149,10 @@ span {
     
     .icons-contact img {
         width: 110px;
+    }
+
+    .rules p {
+        width: 550px;
     }
 }
 
@@ -1136,6 +1275,15 @@ span {
         gap: 20px;
         margin: 60px 0;
     }
+
+    .icons-delivery {
+    margin-bottom: 20px;
+}
+
+    .icons-delivery img {
+    width: 50px;
+    margin-right: 10px;
+}
 
     #container-application {
         flex-direction: row;
@@ -1269,6 +1417,10 @@ span {
     #container-history p {
         width: 550px;
         margin: 0 ;
+    }
+
+    .rules p {
+        width: 600px;
     }
 
     .pasta, .sauces, .fillings {

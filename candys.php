@@ -63,8 +63,8 @@ $candys = readAllCandys($conexao);
                         </div>
                     </li>
                     <div class="container-buttons">
-                        <button class="login">Entrar</button>
-                        <button class="register">Cadastre-se</button>
+                        <a href="login.php"><button class="login">Entrar</button></a>
+                        <a href="register.php"><button class="register">Cadastre-se</button></a>
                     </div>
                 </ul>
             </nav>

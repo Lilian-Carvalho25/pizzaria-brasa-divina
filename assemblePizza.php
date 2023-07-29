@@ -57,8 +57,8 @@
                         </div>
                     </li>
           <div class="container-buttons">
-            <button class="login">Entrar</button>
-            <button class="register">Cadastre-se</button>
+            <a href="login.php"><button class="login">Entrar</button></a>
+            <a href="register.php"><button class="register">Cadastre-se</button></a>
           </div>
         </ul>
       </nav>
@@ -91,6 +91,13 @@
           </a>
           <h5>Doces</h5>
         </article>
+      </div>
+    </section>
+
+    <section id="container-rules">
+      <div class="rules">
+      <h2>Como funciona a <span>montagem?</span></h2>
+      <p>Você pode selecionar apenas uma opção de massa e molho, e escolher quantos recheios desejar. Lembrando que não é recomendado misturar recheios doces e salgados. O preço para pizzas personalizadas é <span>40 reais</span>, divirta-se!</p>
       </div>
     </section>
 
@@ -253,7 +260,7 @@
       <div class="name">
         <form action="">
           <label for="">Nome da sua pizza:</label>
-          <input type="text" name="name-pizza" id="name-pizza">
+          <input type="text" name="name-pizza" id="name-pizza" autocomplete="off">
           <p id="opcoesSelecionadas"><span>Opções selecionadas: </span> </p>
           <button type="submit" class="button-add-cart">Adicionar ao carrinho</button>
         </form>
