@@ -8,9 +8,9 @@ CREATE TABLE novosUsuarios(
     senha VARCHAR(255) NOT NULL,
     cep VARCHAR(10) NOT NULL UNIQUE,
     complemento VARCHAR(45) NOT NULL UNIQUE,
-    telefone VARCHAR(18) NOT NULL,
-    tipo ENUM('admin','comum') NOT NULL
+    tipo ENUM('admin', 'comum') NOT NULL DEFAULT 'comum' 
 );
+
 ```
 
 ```sql

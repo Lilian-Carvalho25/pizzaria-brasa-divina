@@ -1,3 +1,23 @@
+<?php 
+require_once "inc/users-functions.php";
+
+// if($_SESSION['tipo'] != "admin"){
+// 	header("location:nao-autorizado.php");
+// }
+
+if(isset($_POST['button-register'])){
+
+	$nome = $_POST['name'];
+	$email = $_POST['email'];
+	$senha = password_hash($_POST['senha'], PASSWORD_DEFAULT);
+	$cep = $_POST['cep'];
+	$complemento = $_POST['complemento'];
+
+	insertUser($conexao, $nome, $email, $senha, $cep, $complemento, $tipo);
+	header("location:myPizzas.php");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -33,10 +53,10 @@
                     Mensagem area de login
                 </p>
 
-                <form action="">
+                <form action="" method="post">
                     <div class="alignment-inputs">
                         <label for="">Nome:</label>
-                        <input type="text" name="name-register" id="name-register" required>
+                        <input type="text" name="name" id="name-register" required>
                     </div>
 
                     <div class="email-and-password">

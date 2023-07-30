@@ -1,3 +1,15 @@
+<?php
+require_once "inc/users-functions.php";
+require_once "inc/sessions-functions.php";
+verifyAccess();
+
+if(isset($_GET["logout"])){
+    logout();
+}
+$pagina = basename($_SERVER['PHP_SELF']);
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -19,7 +31,7 @@
                     <li><a href="aboutUs.php" class="special2">Sobre nós</a></li>
                     <li><a href="assemblePizza.php" class="special">Monte sua pizza</a></li>
                     <li><a href=""><img src="imagens/icon-usuario.svg" alt="usuário" width="30px"></a></li>
-                    <li><a href=""><img src="imagens/icon-sair.svg" alt="usuário" width="30px"></a></li>
+                    <li><a href="?logout"><img src="imagens/icon-sair.svg" alt="usuário" width="30px"></a></li>
                 </ul>
             </nav>
         </div>
@@ -30,7 +42,7 @@
             <h3>Selecione a área desejada:</h3>
             <div class="menu-alignment">
                 <article class="icons-menu">
-                    <a href="">
+                    <a href="myPizzas.php">
                         <img src="imagens/icon-minhas-pizzas.svg" alt="ícone de pizza">
                     </a>
                     <h5>Minhas pizzas</h5>

@@ -1537,8 +1537,12 @@ span {
         width: 370px;
     }
     
-    .order-box button, .my-pizzas-box button {
+    .order-box button {
         margin-left: 150px;
+    }
+
+    .my-pizzas-box button {
+        margin-left: 110px;
     }
 }
 

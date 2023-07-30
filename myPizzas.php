@@ -1,3 +1,15 @@
+<?php
+require_once "inc/users-functions.php";
+require_once "inc/sessions-functions.php";
+verifyAccess();
+
+if(isset($_GET["logout"])){
+    logout();
+}
+$pagina = basename($_SERVER['PHP_SELF']);
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -19,7 +31,7 @@
                     <li><a href="aboutUs.php" class="special2">Sobre nós</a></li>
                     <li><a href="assemblePizza.php" class="special">Monte sua pizza</a></li>
                     <li><a href=""><img src="imagens/icon-usuario.svg" alt="usuário" width="30px"></a></li>
-                    <li><a href=""><img src="imagens/icon-sair.svg" alt="usuário" width="30px"></a></li>
+                    <li><a href="?logout"><img src="imagens/icon-sair.svg" alt="usuário" width="30px"></a></li>
                 </ul>
             </nav>
         </div>
@@ -52,7 +64,7 @@
                     <div>
                         <h3>Explosão de sabores</h3>
                         <p><span>Massa:</span> média; <span>Molho:</span> marinara; <span>Recheios:</span> mussarela, salame, brócolis e milho. </p>
-                        <button type="submit" name="finalizar-pedido">Finalizar pedido</button>
+                        <button type="submit" name="pedir">Pedir</button>
                     </div>
                 </article>
 
@@ -61,7 +73,7 @@
                     <div>
                         <h3>Pedido de toda semana</h3>
                         <p><span>Massa:</span> média; <span>Molho:</span> bechamel; <span>Recheios:</span> abacaxi, milho, brócolis, pimentões e alho frito. </p>
-                        <button type="submit" name="finalizar-pedido">Finalizar pedido</button>
+                        <button type="submit" name="pedir">Pedir</button>
                     </div>
                 </article>
 
@@ -70,7 +82,7 @@
                     <div>
                         <h3>Pizza sensacional</h3>
                         <p><span>Massa:</span> grande; <span>Molho:</span> cheddar; <span>Recheios:</span> mussarela, bacon, presunto e abacaxi. </p>
-                        <button type="submit" name="finalizar-pedido">Finalizar pedido</button>
+                        <button type="submit" name="pedir">Pedir</button>
                     </div>
                 </article>
 
@@ -79,7 +91,7 @@
                     <div>
                         <h3>Sonho doce</h3>
                         <p><span>Massa:</span> pequena; <span>Molho:</span> sem molho; <span>Recheios:</span> chocolate ao leite, chocolate branco e morangos. </p>
-                        <button type="submit" name="finalizar-pedido">Finalizar pedido</button>
+                        <button type="submit" name="pedir">Pedir</button>
                     </div>
                 </article>
             </div>
