@@ -1,46 +1,45 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<?php 
+require_once "inc/sessions-functions.php";
+require_once "inc/users-functions.php";
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brasa Divina - Login</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+$pageTitle = "Brasa Divina - Login"; 
+$Logged = isLogged();
 
-<body>
-    <header>
+if ($Logged) {
+    include 'inc/header-logged-off.php';
+} else {
+    include 'inc/header-logged.php';
+}
 
-        <div class="limitador">
-            <a href="index.php"><img src="imagens/Logo-brasa_divina.svg" alt="Logo brasa divina" class="logo"></a>
-            <nav>
-                <h2><a href="" class="icone"> <img src="imagens/icon-menu.svg" alt=""> </a></h2>
-                <ul class="menu">
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="aboutUs.php" class="special2">Sobre nós</a></li>
-                    <li><a href="assemblePizza.php" class="special">Monte sua pizza</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+if(isset($_GET["campos_obrigatorios"]) ){
 
-    <main>
+	$message = "Você deve preencher e-mail e senha!";
+} elseif(isset($_GET["dados_incorretos"])){
+	$message = "Dados incorretos, verifique e-mail e/ou senha!";
+} elseif(isset($_GET["logout"])){
+	$message = "Voce saiu do sistema.";
+}
+
+?>
+
         <section id="container-login">
             <div class="login-page">
                 <h1>Olá! Bem vindo(a) de volta!</h1>
 
+                <?php if(isset($message)) {?>
                     <p class="feedback-login-and-register">
-                        Mensagem area de login
+                    <?=$message?>
                     </p>   
+                <?php } ?>
 
-                    <form action="">
+                    <form action="" method="post">
                       <div class="alignment-inputs">
-                          <label for="">E-mail:</label>
+                          <label for="email">E-mail:</label>
                           <input type="email" name="email" id="email-login" required>
                       </div>
 
                       <div class="alignment-inputs">
-                        <label for="">Senha:</label>
+                        <label for="senha">Senha:</label>
                         <input type="password" name="senha" id="senha-login" required>
                     </div>
                     <button type="submit" name="button-login">Entrar</button>
@@ -48,6 +47,35 @@
                     </form>
             </div>
         </section>
+
+        <?php
+            
+            if(isset($_POST["button-login"])){
+            
+                if(empty($_POST["email"]) || empty($_POST["senha"])){
+                    header("location:login.php?campos_obrigatorios");
+                    exit;
+            
+                }
+            
+                $email = $_POST['email'];
+                $senha = $_POST['senha'];
+            
+                $dataUser = searchUser($conexao, $email);
+            
+                if( $dataUser != null && password_verify($senha, $dataUser['senha'])) {
+            
+                    login($dataUser['id'], $dataUser['email']);
+                    header("location:myPizzas.php");
+                    exit;
+            
+                } else {
+                    header("location:login.php?dados_incorretos");
+                    exit;
+                }
+            } 
+            
+            ?>
     </main>
 </body>
 

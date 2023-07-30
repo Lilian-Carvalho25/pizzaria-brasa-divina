@@ -5,6 +5,11 @@ require_once "inc/users-functions.php";
 // 	header("location:nao-autorizado.php");
 // }
 
+if(isset($_GET["campos_obrigatorios"]) ){
+	$message = "Você deve preencher os campos vazios!";
+    exit;
+} 
+
 if(isset($_POST['button-register'])){
 
 	$nome = $_POST['name'];
@@ -13,8 +18,16 @@ if(isset($_POST['button-register'])){
 	$cep = $_POST['cep'];
 	$complemento = $_POST['complemento'];
 
-	insertUser($conexao, $nome, $email, $senha, $cep, $complemento, $tipo);
+	insertUser($conexao, $nome, $email, $senha, $cep, $complemento);
 	header("location:myPizzas.php");
+}
+
+if(isset($_POST["button-register"])){
+
+    if(empty($_POST["email"]) || empty($_POST["senha"]) || empty($_POST["cep"])  || empty($_POST["complemento"])){
+        header("location:login.php?campos_obrigatorios");
+        exit;
+    }
 }
 ?>
 
@@ -49,35 +62,37 @@ if(isset($_POST['button-register'])){
             <div class="register-page">
                 <h1>Seja bem vindo(a)!</h1>
 
+                <?php if(isset($message)) {?>
                 <p class="feedback-login-and-register">
-                    Mensagem area de login
+                <?=$message?>
                 </p>
+                <?php } ?>
 
                 <form action="" method="post">
                     <div class="alignment-inputs">
-                        <label for="">Nome:</label>
-                        <input type="text" name="name" id="name-register" required>
+                        <label for="name">Nome:</label>
+                        <input type="text" name="name" id="name-register">
                     </div>
 
                     <div class="email-and-password">
                         <div class="alignment-inputs">
-                            <label for="">E-mail:</label>
-                            <input type="email" name="email" id="email-register" required>
+                            <label for="email">E-mail:</label>
+                            <input type="email" name="email" id="email-register">
                         </div>
                         <div class="alignment-inputs">
-                            <label for="">Senha:</label>
-                            <input type="password" name="senha" id="senha-register" required>
+                            <label for="senha">Senha:</label>
+                            <input type="password" name="senha" id="senha-register">
                         </div>
                     </div>
 
                     <div class="cep-and-cmp">
                         <div class="alignment-inputs">
-                            <label for="">CEP:</label>
+                            <label for="cep">CEP:</label>
                             <input type="text" name="cep" id="cep-register">
                         </div>
                         <div class="alignment-inputs">
-                            <label for="">Complemento:</label>
-                            <input type="text" name="complemento" id="complemento-register" required>
+                            <label for="complemento">Complemento:</label>
+                            <input type="text" name="complemento" id="complemento-register">
                         </div>
                     </div>
                     <button type="submit" name="button-register">Cadastrar</button>

@@ -1,13 +1,10 @@
 <?php
 require_once "inc/users-functions.php";
 require_once "inc/sessions-functions.php";
-verifyAccess();
 
 if(isset($_GET["logout"])){
     logout();
 }
-$pagina = basename($_SERVER['PHP_SELF']);
-
 ?>
 
 <!DOCTYPE html>

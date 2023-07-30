@@ -7,20 +7,23 @@ if(!isset($_SESSION)){
 function verifyAccess(){
     if(!isset($_SESSION['id'])){
         session_destroy();
-        header("location:../login.php");
+        header("location:login.php");
         exit;
     }
 } 
 
-function login ($id, $nome, $tipo) {
+function login ($id, $email) {
     $_SESSION['id'] = $id;
-    $_SESSION['nome'] = $nome;
-    $_SESSION['tipo'] = $tipo;
+    $_SESSION['email'] = $email;
 }
 
 function logout() {
     session_start();
     session_destroy();
-    header("location:../login.php?logout");
+    header("location:login.php?logout");
     exit;
 } 
+
+function isLogged() {
+    return isset($_SESSION['id']);
+}

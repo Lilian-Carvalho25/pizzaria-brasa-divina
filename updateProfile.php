@@ -1,12 +1,33 @@
 <?php
 require_once "inc/users-functions.php";
 require_once "inc/sessions-functions.php";
-verifyAccess();
 
 if(isset($_GET["logout"])){
     logout();
 }
-$pagina = basename($_SERVER['PHP_SELF']);
+
+// $id = $_GET["id"];
+// $user = readUser($conexao, $id);
+
+
+// if(isset($_POST['button-update'])){
+
+// 	$nome = $_POST['nome'];
+// 	$email = $_POST['email'];
+// 	$cep = $_POST['cep'];
+// 	$complemento = $_POST['complemento'];
+
+// 	if(empty($_POST['senha']) || password_verify($_POST['senha'], $user['senha']) ) {
+// 		$senha = $user["senha"];
+// 	} else {
+// 		$senha = password_hash($_POST['senha'], PASSWORD_DEFAULT);
+
+// 	} 
+
+// 	updateUser($conexao, $id, $nome, $email, $senha, $cep, $complemento);
+// 	header("location:updateProfile.php");
+
+// } 
 
 ?>
 
@@ -60,28 +81,28 @@ $pagina = basename($_SERVER['PHP_SELF']);
             <div class="update">
                 <form action="">
                 <div class="alignment-inputs">
-                          <label for="">Nome:</label>
-                          <input type="text" name="name-update" id="name-input" required>
+                          <label for="name">Nome:</label>
+                          <input value="<?=$user['nome']?>" type="text" name="name" id="name-input" required>
                       </div>
 
                       <div class="alignment-inputs">
-                          <label for="">E-mail:</label>
-                          <input type="email" name="email" id="email-update" required>
+                          <label for="email">E-mail:</label>
+                          <input value="<?=$user['email']?>" type="email" name="email" id="email-update" required>
                       </div>
 
                       <div class="alignment-inputs">
-                        <label for="">Senha:</label>
-                        <input type="password" name="senha-update" id="senha-update" required>
+                        <label for="senha">Senha:</label>
+                        <input type="password" name="senha" id="senha-update" required>
                     </div>
 
                     <div class="alignment-inputs">
-                        <label for="">CEP:</label>
-                        <input type="text" name="cep-update" id="cep-update" required>
+                        <label for="cep">CEP:</label>
+                        <input value="<?=$user['cep']?>" type="text" name="cep" id="cep-update" required>
                     </div>
 
                     <div class="alignment-inputs">
-                        <label for="">Complemento:</label>
-                        <input type="text" name="complemento-update" id="complemento-update" required>
+                        <label for="complemento">Complemento:</label>
+                        <input value="<?=$user['complemento']?>" type="text" name="complemento" id="complemento-update" required>
                     </div>
                     <button type="submit" name="button-update">Atualizar</button>
                     </form>
