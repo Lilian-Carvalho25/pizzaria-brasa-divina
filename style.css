@@ -570,7 +570,7 @@ span {
     align-items: center;
 }
 
-#highlight-aboutUs h1, #highlight-assemble h1, #highlight-pizzas h1,  #highlight-drinks h1, #highlight-candys h1   {
+#highlight-aboutUs h1, #highlight-assemble h1, #highlight-pizzas h1,  #highlight-drinks h1, #highlight-candys h1, #highlight-requests h1   {
     font-size: 1.8rem;
     font-weight: 900;
 }
@@ -776,14 +776,14 @@ span {
     gap: 25px;
 }
 
-.login-page form, .register-page form {
+.login-page form, .register-page form, .update form {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.login-page form input, .register-page form input {
+.login-page form input, .register-page form input, .update form input {
     background: #181926;
     border: none;
     border: 1px solid #F2B035;
@@ -796,7 +796,7 @@ span {
     margin-bottom: 12px;
 }
 
-.login-page button, .register-page button {
+.login-page button, .register-page button, .update button {
     background-color: #73071B;
     color: #F2F2F2;
     font-family: 'Pangolin', cursive, Georgia, 'Times New Roman', Times, serif;
@@ -813,7 +813,65 @@ span {
     margin-top: 12px;
 }
 
+/* UPDATE PROFILE */
+#container-update {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
 
+/* REQUESTS AND MYPIZZAS */
+#highlight-requests {
+    background: url(imagens/destaque-pizzaiolo-logado.jpg) center center no-repeat;
+    background-size: cover;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.requests, .my-pizzas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.order-box, .my-pizzas-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    margin-top: 60px;
+    border: #F2B035 solid 1px;
+    border-radius: 8px;
+    padding: 25px 15px;
+}
+
+.order-box h3, .my-pizzas-box h3 {
+    text-align: center;
+    margin: 10px;
+}
+
+.order-box p, .my-pizzas-box p {
+    margin: 0 7px;
+}
+
+.order-box button, .my-pizzas-box button {
+    background-color: #73071B;
+    color: #F2F2F2;
+    font-family: 'Pangolin', cursive, Georgia, 'Times New Roman', Times, serif;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 12px;
+    margin-left: 80px;
+}
+
+.space {
+    margin-bottom: 50px;
+}
 
 /* FOOTER */
 .adjustment-footer {
@@ -1154,6 +1212,31 @@ span {
     .rules p {
         width: 550px;
     }
+
+    .order-box, .my-pizzas-box {
+        flex-direction: row;
+        width: 600px;
+        padding: 30px 20px;
+    }
+
+    .order-box img, .my-pizzas-box img {
+        width: 100px;
+    }
+    
+    .order-box h3, .my-pizzas-box h3 {
+        margin: 10px;
+    }
+    
+    .order-box p, .my-pizzas-box h3 {
+        width: 300px;
+        margin: 0px;
+        margin-left: 50px;
+    }
+    
+    .order-box button, .my-pizzas-box h3 {
+        margin-top: 20px;
+        margin-left: 130px;
+    }
 }
 
 @media screen and (min-width: 800px) {
@@ -1324,6 +1407,15 @@ span {
         margin-top: 20px;
         margin-right: 20px;
     }
+
+    .order-box, .my-pizzas-box {
+        width: 700px;
+    }
+
+    .order-box img, .my-pizzas-box img {
+        width: 110px;
+        margin-right: 60px;
+    }
 }
 
 @media screen and (min-width:1310px) {
@@ -1426,6 +1518,27 @@ span {
     .pasta, .sauces, .fillings {
         gap: 30px;
         max-width: 1200px;
+    }
+
+    .order-box, .my-pizzas-box {
+        width: 800px;
+    }
+
+    .order-box img, .my-pizzas-box img {
+        width: 130px;
+        margin-right: 80px;
+    }
+    
+    .order-box h3, .my-pizzas-box h3 {
+        margin: 15px;
+    }
+    
+    .order-box p, .my-pizzas-box p {
+        width: 370px;
+    }
+    
+    .order-box button, .my-pizzas-box button {
+        margin-left: 150px;
     }
 }
 

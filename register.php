@@ -46,7 +46,7 @@
                         </div>
                         <div class="alignment-inputs">
                             <label for="">Senha:</label>
-                            <input type="text" name="senha" id="senha-register" required>
+                            <input type="password" name="senha" id="senha-register" required>
                         </div>
                     </div>
 
@@ -60,7 +60,7 @@
                             <input type="text" name="complemento" id="complemento-register" required>
                         </div>
                     </div>
-                    <button type="submit" name="button-login">Entrar</button>
+                    <button type="submit" name="button-register">Cadastrar</button>
                     <a href="login.php">Já tem cadastro? Faça login agora mesmo!</a>
                 </form>
             </div>

@@ -41,7 +41,7 @@
 
                       <div class="alignment-inputs">
                         <label for="">Senha:</label>
-                        <input type="text" name="senha" id="senha-login" required>
+                        <input type="password" name="senha" id="senha-login" required>
                     </div>
                     <button type="submit" name="button-login">Entrar</button>
                     <a href="register.php">Não tem cadastro? Faça agora mesmo!</a>
