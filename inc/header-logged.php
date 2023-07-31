@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $pageTitle; ?></title>
+    <title><?php printf("%s", $pageTitle); ?></title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -19,6 +19,45 @@
                     <li><a href="index.php">Home</a></li>
                     <li><a href="aboutUs.php" class="special2">Sobre nós</a></li>
                     <li><a href="assemblePizza.php" class="special">Monte sua pizza</a></li>
+                    <li><a href=""><img src="imagens/icon-usuario.svg" alt="usuário" width="30px"></a></li>
+                    <li><a class="cta" href="#google"><img src="imagens/icon-carrinho.svg" alt=""></a>
+                        <div id="google" class="modaloverlay">
+                            <div class="modal">
+                                <a href="#close" class="close">&times;</a>
+                                <div>
+                                    <section class="container normal-section">
+                                        <h2 class="section-title">Carrinho</h2>
+
+                                        <table class="cart-table">
+                                            <thead>
+                                                <tr>
+                                                    <th class="table-head-item first-col">Item</th>
+                                                    <th class="table-head-item second-col">Preço</th>
+                                                    <th class="table-head-item third-col">Quantidade</th>
+                                                </tr>
+                                            </thead>
+
+                                            <tbody>
+
+                                            </tbody>
+
+                                            <tfoot>
+                                                <tr>
+                                                    <td colspan="3" class="cart-total-container">
+                                                        <strong>Total</strong>
+                                                        <span>R$0,00</span>
+                                                    </td>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+
+                                        <button type="button" class="purchase-button">Finalizar Compra</button>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="?logout"><img src="imagens/icon-sair.svg" alt="usuário" width="30px"></a></li>
                 </ul>
             </nav>
         </div>

@@ -23,7 +23,3 @@ function logout() {
     header("location:login.php?logout");
     exit;
 } 
-
-function isLogged() {
-    return isset($_SESSION['id']);
-}

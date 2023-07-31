@@ -1,15 +1,9 @@
 <?php 
+$pageTitle = "Brasa Divina - Login"; 
+include 'inc/header-logged-off.php';
 require_once "inc/sessions-functions.php";
 require_once "inc/users-functions.php";
 
-$pageTitle = "Brasa Divina - Login"; 
-$Logged = isLogged();
-
-if ($Logged) {
-    include 'inc/header-logged-off.php';
-} else {
-    include 'inc/header-logged.php';
-}
 
 if(isset($_GET["campos_obrigatorios"]) ){
 
@@ -35,12 +29,12 @@ if(isset($_GET["campos_obrigatorios"]) ){
                     <form action="" method="post">
                       <div class="alignment-inputs">
                           <label for="email">E-mail:</label>
-                          <input type="email" name="email" id="email-login" required>
+                          <input type="email" name="email" id="email-login">
                       </div>
 
                       <div class="alignment-inputs">
                         <label for="senha">Senha:</label>
-                        <input type="password" name="senha" id="senha-login" required>
+                        <input type="password" name="senha" id="senha-login">
                     </div>
                     <button type="submit" name="button-login">Entrar</button>
                     <a href="register.php">Não tem cadastro? Faça agora mesmo!</a>
