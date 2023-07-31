@@ -12,9 +12,10 @@ function verifyAccess(){
     }
 } 
 
-function login ($id, $email) {
+function login ($id, $email, $tipo) {
     $_SESSION['id'] = $id;
     $_SESSION['email'] = $email;
+    $_SESSION['tipo'] = $tipo;
 }
 
 function logout() {

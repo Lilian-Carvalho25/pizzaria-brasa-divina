@@ -5,6 +5,8 @@ require_once "inc/sessions-functions.php";
 if(isset($_GET["logout"])){
     logout();
 }
+
+$tipo = $_SESSION['tipo']; 
 ?>
 
 <!DOCTYPE html>
@@ -24,11 +26,7 @@ if(isset($_GET["logout"])){
             <nav>
                 <h2><a href="" class="icone"> <img src="imagens/icon-menu.svg" alt=""> </a></h2>
                 <ul class="menu">
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="aboutUs.php" class="special2">Sobre nós</a></li>
-                    <li><a href="assemblePizza.php" class="special">Monte sua pizza</a></li>
-                    <li><a href=""><img src="imagens/icon-usuario.svg" alt="usuário" width="30px"></a></li>
-                    <li><a href="?logout"><img src="imagens/icon-sair.svg" alt="usuário" width="30px"></a></li>
+                    <li><a href="?logout"><img src="imagens/icon-sair.svg" alt="usuário" width="30px" class="exit" id="exitLink1"></a></li>
                 </ul>
             </nav>
         </div>
@@ -40,11 +38,21 @@ if(isset($_GET["logout"])){
             <h3>Selecione a área desejada:</h3>
             <div class="menu-alignment">
                 <article class="icons-menu">
-                    <a href="">
+                    <a href="myPizzas.php">
                         <img src="imagens/icon-minhas-pizzas.svg" alt="ícone de pizza">
                     </a>
                     <h5>Minhas pizzas</h5>
                 </article>
+
+                <?php if($tipo == "admin") { ?>
+                <article class="icons-menu">
+                    <a href="requests.php">
+                        <img src="imagens/icon-pedido.svg" alt="ícone de caderneta">
+                    </a>
+                    <h5>Pedidos</h5>
+                </article>
+                <?php } ?>
+
                 <article class="icons-menu">
                     <a href="updateProfile.php">
                         <img src="imagens/icon-atualizar.svg" alt="ícone de usuário">

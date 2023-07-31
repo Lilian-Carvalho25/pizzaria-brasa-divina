@@ -95,7 +95,7 @@ if(isset($_POST["button-register"])){
                             <input type="text" name="complemento" id="complemento-register">
                         </div>
                     </div>
-                    <button type="submit" name="button-register">Cadastrar</button>
+                    <button type="submit" name="button-register" class="login-register">Cadastrar</button>
                     <a href="login.php">Já tem cadastro? Faça login agora mesmo!</a>
                 </form>
             </div>

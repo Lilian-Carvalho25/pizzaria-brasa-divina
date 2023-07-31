@@ -61,6 +61,10 @@ header nav .container-buttons {
     gap: 13px;
 }
 
+.hidden {
+    display: none;
+}
+
 header nav button {
     margin-top: 4px;
     width: 120px;

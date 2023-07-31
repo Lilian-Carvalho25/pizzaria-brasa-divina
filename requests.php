@@ -1,3 +1,14 @@
+<?php
+require_once "inc/users-functions.php";
+require_once "inc/sessions-functions.php";
+verifyAccess();
+
+if(isset($_GET["logout"])){
+    logout();
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -13,11 +24,7 @@
             <nav>
                 <h2><a href="" class="icone"> <img src="imagens/icon-menu.svg" alt=""> </a></h2>
                 <ul class="menu">
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="aboutUs.php" class="special2">Sobre nós</a></li>
-                    <li><a href="assemblePizza.php" class="special">Monte sua pizza</a></li>
-                    <li><a href=""><img src="imagens/icon-usuario.svg" alt="usuário" width="30px"></a></li>
-                    <li><a href=""><img src="imagens/icon-sair.svg" alt="usuário" width="30px"></a></li>
+                    <li><a href="?logout"><img src="imagens/icon-sair.svg" alt="usuário" width="30px"  class="exit"></a></li>
                 </ul>
             </nav>
         </div>
@@ -27,6 +34,30 @@
     <section id="highlight-requests">
         <h1>Visualização de pedidos</h1>
     </section>
+
+    <section class="food-menu">
+            <h3>Selecione a área desejada:</h3>
+            <div class="menu-alignment">
+                <article class="icons-menu">
+                    <a href="myPizzas.php">
+                        <img src="imagens/icon-minhas-pizzas.svg" alt="ícone de pizza">
+                    </a>
+                    <h5>Minhas pizzas</h5>
+                </article>
+                <article class="icons-menu">
+                    <a href="requests.php">
+                        <img src="imagens/icon-pedido.svg" alt="ícone de caderneta">
+                    </a>
+                    <h5>Pedidos</h5>
+                </article>
+                <article class="icons-menu">
+                    <a href="updateProfile.php">
+                        <img src="imagens/icon-atualizar.svg" alt="ícone de usuário">
+                    </a>
+                    <h5>Atualizar perfil</h5>
+                </article>
+            </div>
+        </section>
 
     <section id="container-requests">
         <div class="requests">
