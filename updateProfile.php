@@ -44,7 +44,7 @@ if(isset($_GET["logout"])){
 <body>
     <header>
         <div class="limitador">
-            <a href="index.php"><img src="imagens/Logo-brasa_divina.svg" alt="Logo brasa divina" class="logo"></a>
+            <a href=""><img src="imagens/Logo-brasa_divina.svg" alt="Logo brasa divina" class="logo"></a>
             <nav>
                 <h2><a href="" class="icone"> <img src="imagens/icon-menu.svg" alt=""> </a></h2>
                 <ul class="menu">
@@ -86,27 +86,27 @@ if(isset($_GET["logout"])){
                 <form action="">
                 <div class="alignment-inputs">
                           <label for="name">Nome:</label>
-                          <input value="<?=$user['nome']?>" type="text" name="name" id="name-input" required>
+                          <input type="text" name="name" id="name-input" required>
                       </div>
 
                       <div class="alignment-inputs">
                           <label for="email">E-mail:</label>
-                          <input value="<?=$user['email']?>" type="email" name="email" id="email-update" required>
+                          <input type="email" name="email" id="email-update" required>
                       </div>
 
                       <div class="alignment-inputs">
                         <label for="senha">Senha:</label>
-                        <input type="password" name="senha" id="senha-update" required>
+                        <input type="password" name="senha" id="senha-update" placeholder="Preencha se apenas se for alterar" required>
                     </div>
 
                     <div class="alignment-inputs">
                         <label for="cep">CEP:</label>
-                        <input value="<?=$user['cep']?>" type="text" name="cep" id="cep-update" required>
+                        <input type="text" name="cep" id="cep-update" required>
                     </div>
 
                     <div class="alignment-inputs">
                         <label for="complemento">Complemento:</label>
-                        <input value="<?=$user['complemento']?>" type="text" name="complemento" id="complemento-update" required>
+                        <input type="text" name="complemento" id="complemento-update" required>
                     </div>
                     <button type="submit" name="button-update">Atualizar</button>
                     </form>

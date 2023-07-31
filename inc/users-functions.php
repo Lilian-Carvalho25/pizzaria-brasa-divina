@@ -20,6 +20,20 @@ function searchUser($conexao, $email){
 }
 
 // updateProfile.php
+function readAllUsers($conexao){
+    $sql = "SELECT id, nome, email, cep, complemento FROM novosUsuarios ORDER BY nome";
+    $resultado = mysqli_query($conexao, $sql)
+     or die (mysqli_error($conexao));
+
+     $allUsers = [];
+
+     while ($user = mysqli_fetch_assoc($resultado)){
+        array_push($allUsers, $user);
+     }
+     return $allUsers;
+} 
+
+// updateProfile.php
 function readUser($conexao, $id){
     $sql = "SELECT * FROM novosUsuarios WHERE id = $id";
 

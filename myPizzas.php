@@ -7,6 +7,7 @@ if(isset($_GET["logout"])){
 }
 
 $tipo = $_SESSION['tipo']; 
+$allUsers = readAllUsers($conexao);
 ?>
 
 <!DOCTYPE html>
@@ -22,7 +23,7 @@ $tipo = $_SESSION['tipo'];
 <body>
     <header>
         <div class="limitador">
-            <a href="index.php"><img src="imagens/Logo-brasa_divina.svg" alt="Logo brasa divina" class="logo"></a>
+            <a href=""><img src="imagens/Logo-brasa_divina.svg" alt="Logo brasa divina" class="logo"></a>
             <nav>
                 <h2><a href="" class="icone"> <img src="imagens/icon-menu.svg" alt=""> </a></h2>
                 <ul class="menu">
