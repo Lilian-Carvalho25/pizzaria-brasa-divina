@@ -111,7 +111,7 @@ $candys = readAllCandys($conexao);
                             <h5 class="product-price">R$ <?= $candy["preco"] ?>,00</h5>
                         </div>
                         <p><?= $candy["resumo"] ?></p>
-                        <button type="submit" class="button-add-cart">Adicionar ao carrinho</button>
+                        <button type="submit" class="button-add-cart" onclick="addedToCart()">Adicionar ao carrinho</button>
                     </article>
                 <?php } ?>
         </section>
@@ -164,5 +164,6 @@ $candys = readAllCandys($conexao);
 
 <script src="js/menu.js"></script>
 <script src="js/store.js"></script>
+<script src="js/order.js"></script>
 
 </html>

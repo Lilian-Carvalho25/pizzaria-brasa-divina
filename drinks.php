@@ -111,7 +111,7 @@ $drinks = readAllDrinks($conexao);
                             <h5 class="product-price">R$ <?= $drink["preco"] ?>,00</h5>
                         </div>
                         <p><?= $drink["resumo"] ?></p>
-                        <button type="submit" class="button-add-cart">Adicionar ao carrinho</button>
+                        <button type="submit" class="button-add-cart" onclick="addedToCart()">Adicionar ao carrinho</button>
                     </article>
                 <?php } ?>
         </section>
@@ -164,5 +164,6 @@ $drinks = readAllDrinks($conexao);
 
 <script src="js/menu.js"></script>
 <script src="js/store.js"></script>
+<script src="js/order.js"></script>
 
 </html>

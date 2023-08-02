@@ -67,7 +67,7 @@ $allUsers = readAllUsers($conexao);
                 <div>
                     <h3>Valeska Marques</h3>
                     <p><span>Pizza:</span> Calabacon e mussarela. <span>Sobremesa:</span> Banana e cookies. <span>Bebida:</span> R. de Cola</p>
-                    <button type="submit" name="finalizar-pedido">Finalizar pedido</button>
+                    <button type="submit" name="finalizar-pedido" onclick="finalizeOrder()">Finalizar pedido</button>
                 </div>
             </article>
 
@@ -76,7 +76,7 @@ $allUsers = readAllUsers($conexao);
                 <div>
                     <h3>Valeska Marques</h3>
                     <p><span>Pizza:</span> Calabacon e mussarela. <span>Sobremesa:</span> Banana e cookies. <span>Bebida:</span> R. de Cola</p>
-                    <button type="submit" name="finalizar-pedido">Finalizar pedido</button>
+                    <button type="submit" name="finalizar-pedido" onclick="finalizeOrder()">Finalizar pedido</button>
                 </div>
             </article>
 
@@ -85,7 +85,7 @@ $allUsers = readAllUsers($conexao);
                 <div>
                     <h3>Valeska Marques</h3>
                     <p><span>Pizza:</span> Calabacon e mussarela. <span>Sobremesa:</span> Banana e cookies. <span>Bebida:</span> R. de Cola</p>
-                    <button type="submit" name="finalizar-pedido">Finalizar pedido</button>
+                    <button type="submit" name="finalizar-pedido" onclick="finalizeOrder()">Finalizar pedido</button>
                 </div>
             </article>
 
@@ -94,7 +94,7 @@ $allUsers = readAllUsers($conexao);
                 <div>
                     <h3>Valeska Marques</h3>
                     <p><span>Pizza:</span> Calabacon e mussarela. <span>Sobremesa:</span> Banana e cookies. <span>Bebida:</span> R. de Cola</p>
-                    <button type="submit" name="finalizar-pedido">Finalizar pedido</button>
+                    <button type="submit" name="finalizar-pedido" onclick="finalizeOrder()">Finalizar pedido</button>
                 </div>
             </article>
 
@@ -103,7 +103,7 @@ $allUsers = readAllUsers($conexao);
                 <div>
                     <h3>Valeska Marques</h3>
                     <p><span>Pizza:</span> Calabacon e mussarela. <span>Sobremesa:</span> Banana e cookies. <span>Bebida:</span> R. de Cola</p>
-                    <button type="submit" name="finalizar-pedido">Finalizar pedido</button>
+                    <button type="submit" name="finalizar-pedido" onclick="finalizeOrder()">Finalizar pedido</button>
                 </div>
             </article>
         </div>
@@ -156,4 +156,5 @@ $allUsers = readAllUsers($conexao);
 </body>
 <script src="js/menu.js"></script>
 <script src="js/store.js"></script>
+<script src="js/order.js"></script>
 </html>

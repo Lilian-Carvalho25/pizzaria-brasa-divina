@@ -74,7 +74,7 @@ require_once "inc/sessions-functions.php";
 
         <section id="highlight-home">
             <h1>O seu paladar <span>merece.</span></h1>
-            <button>Explorar o menu</button>
+            <a href="#container-pizzas-popular"><button>Explorar o menu</button></a>
         </section>
 
         <section class="food-menu">
@@ -124,7 +124,7 @@ require_once "inc/sessions-functions.php";
                         <h5 class="product-price">R$ 30,00</h5>
                     </div>
                     <p>Mussarela, calabresa trufada, cebola, molho marinara e orégano.</p>
-                    <button type="submit" class="button-add-cart">Adicionar ao carrinho</button>
+                    <button type="submit" class="button-add-cart" onclick="addedToCart()">Adicionar ao carrinho</button>
                 </article>
 
                 <article class="pizza-box">
@@ -134,7 +134,7 @@ require_once "inc/sessions-functions.php";
                         <h5 class="product-price">R$ 30,00</h5>
                     </div>
                     <p>Mussarela, tomates, milho, pimenta, pimentão e molho marinara.</p>
-                    <button type="submit" class="button-add-cart">Adicionar ao carrinho</button>
+                    <button type="submit" class="button-add-cart" onclick="addedToCart()">Adicionar ao carrinho</button>
                 </article>
 
                 <article class="pizza-box">
@@ -144,7 +144,7 @@ require_once "inc/sessions-functions.php";
                         <h5 class="product-price">R$ 30,00</h5>
                     </div>
                     <p>Mussarela, bacon, molho marinara, tomates, cogumelos e orégano.</p>
-                    <button type="submit" class="button-add-cart">Adicionar ao carrinho</button>
+                    <button type="submit" class="button-add-cart" onclick="addedToCart()">Adicionar ao carrinho</button>
                 </article>
             </div>
         </section>
@@ -179,7 +179,7 @@ require_once "inc/sessions-functions.php";
                         <h5 class="product-price">R$ 30,00</h5>
                     </div>
                     <p>Chocolate ao leite e bananas assadas com mel e cravos.</p>
-                    <button type="submit" class="button-add-cart">Adicionar ao carrinho</button>
+                    <button type="submit" class="button-add-cart" onclick="addedToCart()">Adicionar ao carrinho</button>
                 </article>
 
                 <article class="candy-box">
@@ -189,7 +189,7 @@ require_once "inc/sessions-functions.php";
                         <h5 class="product-price">R$ 30,00</h5>
                     </div>
                     <p>Chocolate meio amargo, leite condensado e morangos.</p>
-                    <button type="submit" class="button-add-cart">Adicionar ao carrinho</button>
+                    <button type="submit" class="button-add-cart" onclick="addedToCart()">Adicionar ao carrinho</button>
                 </article>
 
                 <article class="candy-box">
@@ -199,7 +199,7 @@ require_once "inc/sessions-functions.php";
                         <h5 class="product-price">R$ 30,00</h5>
                     </div>
                     <p>Chocolate ao leite, morangos, bananas, kiwis, amoras, etc.</p>
-                    <button type="submit" class="button-add-cart">Adicionar ao carrinho</button>
+                    <button type="submit" class="button-add-cart" onclick="addedToCart()">Adicionar ao carrinho</button>
                 </article>
             </div>
         </section>
@@ -247,7 +247,7 @@ require_once "inc/sessions-functions.php";
                 </article>
                 <article class="feedback-box">
                     <img class="icon-perfil" src="imagens/foto-pessoa-2.png" alt="Paulo Ferreira">
-                    <h4>Paulo Ferreira</h4>
+                    <h4>Claudia Lopes</h4>
                     <img src="imagens/icon-estrelas.svg" alt="ícone cinco estrelas">
                     <p>Encontrei todas as informações que precisava facilmente, e fazer o pedido foi rápido e prático. A entrega foi pontual e a pizza estava divina!</p>
                 </article>
@@ -308,5 +308,6 @@ require_once "inc/sessions-functions.php";
 </body>
 <script src="js/menu.js"></script>
 <script src="js/store.js"></script>
+<script src="js/order.js"></script>
 
 </html>

@@ -110,7 +110,7 @@ $pizzas = readAllPizzas($conexao);
                             <h5 class="product-price">R$ <?= $pizza["preco"] ?>,00</h5>
                         </div>
                         <p><?= $pizza["resumo"] ?></p>
-                        <button type="submit" class="button-add-cart">Adicionar ao carrinho</button>
+                        <button type="submit" class="button-add-cart" onclick="addedToCart()">Adicionar ao carrinho</button>
                     </article>
                 <?php } ?>
         </section>
@@ -163,5 +163,6 @@ $pizzas = readAllPizzas($conexao);
 
 <script src="js/menu.js"></script>
 <script src="js/store.js"></script>
+<script src="js/order.js"></script>
 
 </html>

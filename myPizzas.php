@@ -70,7 +70,7 @@ $allUsers = readAllUsers($conexao);
                     <div>
                         <h3>Explosão de sabores</h3>
                         <p><span>Massa:</span> média; <span>Molho:</span> marinara; <span>Recheios:</span> mussarela, salame, brócolis e milho. </p>
-                        <button type="submit" name="pedir">Pedir</button>
+                        <button type="submit" name="pedir" onclick="displayMessage()">Pedir</button>
                     </div>
                 </article>
 
@@ -79,7 +79,7 @@ $allUsers = readAllUsers($conexao);
                     <div>
                         <h3>Pedido de toda semana</h3>
                         <p><span>Massa:</span> média; <span>Molho:</span> bechamel; <span>Recheios:</span> abacaxi, milho, brócolis, pimentões e alho frito. </p>
-                        <button type="submit" name="pedir">Pedir</button>
+                        <button type="submit" name="pedir" onclick="displayMessage()">Pedir</button>
                     </div>
                 </article>
 
@@ -88,7 +88,7 @@ $allUsers = readAllUsers($conexao);
                     <div>
                         <h3>Pizza sensacional</h3>
                         <p><span>Massa:</span> grande; <span>Molho:</span> cheddar; <span>Recheios:</span> mussarela, bacon, presunto e abacaxi. </p>
-                        <button type="submit" name="pedir">Pedir</button>
+                        <button type="submit" name="pedir" onclick="displayMessage()">Pedir</button>
                     </div>
                 </article>
 
@@ -97,7 +97,7 @@ $allUsers = readAllUsers($conexao);
                     <div>
                         <h3>Sonho doce</h3>
                         <p><span>Massa:</span> pequena; <span>Molho:</span> sem molho; <span>Recheios:</span> chocolate ao leite, chocolate branco e morangos. </p>
-                        <button type="submit" name="pedir">Pedir</button>
+                        <button type="submit" name="pedir" onclick="displayMessage()">Pedir</button>
                     </div>
                 </article>
             </div>
@@ -106,5 +106,6 @@ $allUsers = readAllUsers($conexao);
 </body>
 <script src="js/menu.js"></script>
 <script src="js/store.js"></script>
+<script src="js/order.js"></script>
 
 </html>

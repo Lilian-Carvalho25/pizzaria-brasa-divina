@@ -1,10 +1,6 @@
 <?php 
 require_once "inc/users-functions.php";
 
-// if($_SESSION['tipo'] != "admin"){
-// 	header("location:nao-autorizado.php");
-// }
-
 if(isset($_GET["campos_obrigatorios"]) ){
 	$message = "Você deve preencher os campos vazios!";
     exit;
@@ -19,7 +15,7 @@ if(isset($_POST['button-register'])){
 	$complemento = $_POST['complemento'];
 
 	insertUser($conexao, $nome, $email, $senha, $cep, $complemento);
-	header("location:myPizzas.php");
+	header("location:login.php");
 }
 
 if(isset($_POST["button-register"])){
