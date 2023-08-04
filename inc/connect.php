@@ -6,9 +6,9 @@
 // $banco = "brasa-divina";
 
 $servidor = "localhost";
-$usuario = "if0_34739325";
-$senha = "lila2503";
-$banco = "if0_34739325_brasadivina";
+$usuario = "id21104323_brasadivina";
+$senha = "!Lila2503";
+$banco = "id21104323_brasadivina";
 
 $conexao = mysqli_connect($servidor, $usuario, $senha, $banco);
 mysqli_set_charset($conexao, "utf8");
