@@ -7,7 +7,7 @@
 
 $servidor = "localhost";
 $usuario = "id21104323_brasadivina";
-$senha = "!Lila2503";
+$senha = "Lil@2503";
 $banco = "id21104323_brasadivina";
 
 $conexao = mysqli_connect($servidor, $usuario, $senha, $banco);
