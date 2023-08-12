@@ -98,6 +98,7 @@
       <div class="rules">
       <h2>Como funciona a <span>montagem?</span></h2>
       <p>Você pode selecionar apenas uma opção de massa e molho, e escolher quantos recheios desejar. Lembrando que não é recomendado misturar recheios doces e salgados. O preço para pizzas personalizadas é <span>40 reais</span>, divirta-se!</p>
+      <h4><span>Dica:</span> Clique nos ingredientes para selecioná-los <img src="imagens/clique.svg" alt="icone mão clicando"></h4>
       </div>
     </section>
 

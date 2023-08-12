@@ -7,5 +7,5 @@ function finalizeOrder() {
 }
 
 function addedToCart() {
-    alert("Item adicionado ao carrinho!");
+    alert("Item adicionado ao carrinho, que encontra-se no menu da página!");
 }

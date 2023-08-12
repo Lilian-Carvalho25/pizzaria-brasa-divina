@@ -152,7 +152,7 @@ require_once "inc/sessions-functions.php";
         <section id="container-delivery">
             <img class="deliveryman" src="imagens/foto-entregador.png" alt="Entregador de pizza">
             <div class="delivery">
-                <h2>Peça sua pizza de forma simples <span>simples.</span></h2>
+                <h2>Peça sua pizza de forma <span>simples.</span></h2>
                 <article class="icons-delivery">
                     <img src="imagens/icon-atendente.svg" alt="ícone atendente">
                     <h4>Atendentes atenciosos e eficientes.</h4>
