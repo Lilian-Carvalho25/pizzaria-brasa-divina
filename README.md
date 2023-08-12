@@ -15,8 +15,6 @@ Bem vindo(a)! Este é um site criado com o objetivo de representar um site real 
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css3 logo"  />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" height="40" alt="bootstrap logo"  />
-  <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="40" alt="mysql logo"  />
@@ -27,4 +25,5 @@ Bem vindo(a)! Este é um site criado com o objetivo de representar um site real 
 
 ###
 
-## Projeto em construção 🚧
+**Link do Figma:** <i>[clique aqui](https://www.figma.com/file/cTKmShxHOqdVNfJ2HXuXdy/Brasa-Divina?type=design&node-id=0-1&mode=design&t=SqNi0tQ5AT8dLeuo-0) <br>
+**Link do site:** <i>[venha me conhecer](http://brasa-divina.x10.mx/index.php) 
