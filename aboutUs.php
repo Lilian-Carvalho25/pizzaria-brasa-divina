@@ -9,6 +9,7 @@ require_once "inc/sessions-functions.php";
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Brasa Divina - Sobre nós </title>
+  <link rel="shortcut icon" href="imagens/icon-brasa.svg" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
 </head>
 

@@ -16,6 +16,7 @@ $allUsers = readAllUsers($conexao);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brasa Divina - Pedidos</title>
+    <link rel="shortcut icon" href="imagens/icon-brasa.svg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
