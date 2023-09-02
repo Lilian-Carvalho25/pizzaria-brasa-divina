@@ -7,6 +7,8 @@ Bem vindo(a)! Este é um site criado com o objetivo de representar um site real 
 - Registro das informações informadas pelos usuários, no banco de dados. <br>
 - Design responsivo <br><br>
 
+<img src="https://i.imgur.com/lYe4ax7.png" width="600px" />
+
 ## 🖥️ Tecnologias utilizadas:<br>
 ###
 
